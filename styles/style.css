@@ -83,7 +83,15 @@ button {  width: auto; overflow: visible; }
 
 
 /* Page Style */
+#container {
+  margin: 0pt auto;
+  width: 960px;
+}
 
+header {
+  border-bottom: 3px dashed #000;
+  margin: 10px 0pt;
+}
 
 
 
