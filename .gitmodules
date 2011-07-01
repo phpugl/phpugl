@@ -1,0 +1,3 @@
+[submodule "vendor/phrozn"]
+	path = vendor/phrozn
+	url = git://github.com/farazdagi/phrozn.git
