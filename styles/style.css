@@ -89,11 +89,40 @@ button {  width: auto; overflow: visible; }
 }
 
 header {
-  border-bottom: 3px dashed #000;
-  margin: 10px 0pt;
+  font-size: 20px;
+  margin: 20px 10px;
 }
 
+#main {
+  background: none repeat scroll 0 0 rgba(204, 204, 204, 0.4);
+  border-radius: 5px 5px 10px 10px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4), 0 0 15px rgba(204, 204, 204, 0.5);
+  padding: 20px;
+}
 
+.comment {
+  color: silver;
+  font-family: monospace;
+  white-space: pre;
+}
+
+.code {
+  font-family: monospace;
+  white-space: pre;  
+}
+
+h1, h2, h3, h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+p {
+  margin-bottom: 15px;
+}
 
 
 @media all and (orientation:portrait) { 
