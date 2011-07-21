@@ -40,8 +40,8 @@ h1,h2,h3,h4,h5,h6 { font-weight: bold; }
 html { overflow-y: scroll; }
 
 a:hover, a:active { outline: none; }
-a, a:active, a:visited { color: #607890; }
-a:hover { color: #036; }
+a, a:active, a:visited { color: #000; }
+a:hover { color: #3278A4; }
 
 ul, ol { margin-left: 1.8em; }
 ol { list-style-type: decimal; }
@@ -93,6 +93,12 @@ header {
   margin: 20px 10px;
 }
 
+footer {
+	font-size: 15px;
+	margin-top: 10px;
+	text-align: right;
+}
+
 #main {
   background: none repeat scroll 0 0 rgba(204, 204, 204, 0.4);
   border-radius: 5px 5px 10px 10px;
@@ -124,6 +130,10 @@ p {
   margin-bottom: 15px;
 }
 
+a {
+  font-variant: small-caps;
+  text-decoration: none;
+}
 
 @media all and (orientation:portrait) { 
 }
