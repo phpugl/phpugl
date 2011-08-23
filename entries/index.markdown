@@ -1,6 +1,22 @@
 layout: default.twig
 ---
 
+## Nächstes Treffen am 25. August
+
+von Danilo Kühn / Tim Heil – Datum: 23.08.11
+
+Die PHP Usergroup Leipzig lädt herzlich alle PHP Interessierten zum Treffen am 25.08.2011 ein. Das Treffen soll einen regen Austausch über Neuigkeiten, Fakten und Best Practices in der Programmierung mit PHP schaffen.
+
+Wenn das Wetter mitspielt, wollen wir das ganze ins Freie verlegen. Dazu wird am Mittwoch vorher noch mal eine Info (Twitter: [@phpugl]) kommen, wo wir uns dann treffen werden. Im Regenfall bleibt die angegebene Adresse.
+
+Einige Themen:
+
+* Symfony2 / Vorbereitung Weekend-Hacking Event
+* API Leipzig
+* Logging in PHP
+
+[@phpugl]: http://www.twitter.com/phpugl
+
 ## Demnächst Coding-Wochenende mit Symfony2?
 
 ### Kurzer Rückblick auf das Treffen im Juli
