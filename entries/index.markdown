@@ -1,6 +1,14 @@
 layout: default.twig
 ---
 
+## Update: Treffen 25. August, 19.30 Uhr
+
+von Danilo Kühn – Datum: 25.08.11
+
+Aufgrund des schönen Wetter heute werden wir uns im [Acapulco], Karl-Liebknecht-Straße 42, 04107 Leipzig treffen. Tisch ist reserviert. Also dann bis heute abend.
+
+[Acapulco]: http://g.co/maps/58vm
+
 ## Nächstes Treffen am 25. August
 
 von Danilo Kühn / Tim Heil – Datum: 23.08.11
