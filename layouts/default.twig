@@ -1,22 +1,21 @@
-<!doctype html>  
-<!--[if lt IE 7 ]> <html lang="de" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="de" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="de" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="de" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="de" class="no-js"> <!--<![endif]-->
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="de"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="de"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="de"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="de"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>PHPUGL - PHP UserGroup Leipzig</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHPUGL - PHP UserGroup Leipzig</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   
   <!-- MetaTags -- begin -->
   <meta name="DC.title" content="PHPUGL">
   <meta name="description" content="PHP Usergroup Leipzig - Austausch über Neuigkeiten, Fakten und Best Practice zur Programmiersprache PHP">
   <meta name="DC.Description" content="PHP Usergroup Leipzig - Austausch über Neuigkeiten, Fakten und Best Practice zur Programmiersprache PHP">
-  <meta name="keywords" content="PHP,Usergroup,Leipzig,Best Practice,symfony,Symfony2,doctrine,Doctrine2,LSDUG,Leipzg Symfony und Doctrine Usergroup,Web 2.0,HTML5">
-  <meta name="DC.Subject" content="PHP,Usergroup,Leipzig,Best Practice,symfony,Symfony2,doctrine,Doctrine2,LSDUG,Leipzg Symfony und Doctrine Usergroup,Web 2.0,HTML5">
+  <meta name="keywords" content="PHP,Leipzig,Usergroup,Best Practice,symfony,Symfony2,doctrine,Doctrine2,LSDUG,Leipzg Symfony und Doctrine Usergroup,Web 2.0,HTML5">
+  <meta name="DC.Subject" content="PHP,Leipzig,Usergroup,Best Practice,symfony,Symfony2,doctrine,Doctrine2,LSDUG,Leipzg Symfony und Doctrine Usergroup,Web 2.0,HTML5">
   <meta name="copyright" content="PHP Usergroup Leipzig">
   <meta name="DC.Rights" content="PHP Usergroup Leipzig">
   <meta http-equiv="content-language" content="de">
@@ -28,42 +27,39 @@
   <meta name="robots" content="index,follow">
   <!-- MetaTags -- end -->
   
-  <link rel="stylesheet" href="styles/style.css?v=2">
-  <script src="scripts/lib/modernizr-1.6.min.js"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/lib/modernizr-2.0.6.min.js"></script>
 </head>
 <body>
   <div id="container">
     <header>
+      <div id="logo" role="logo">
 <span class="comment">/**
  * people in L.E. talking about PHP and development
  *
  * @var \PHP\Usergroup\Leipzig
  */
 </span>
-<span class="code"><b>public</b> $phpugl;</span>
-    </header>
-    
-    <div id="main">
-      {{ content }}
-    </div>
-    
-    <footer>
+      <span class="code"><b>public</b> $phpugl;</span>
+      </div>
       <nav>
         <a href="index.html">Home</a>
+        <a href="group.html">Group</a>
         <a href="impressum.html">Impressum</a>
       </nav>
+    </header>
+    <div id="main" role="main">
+      {{ content }}
+    </div>
+    <footer>
+      PHP UserGroup Leipzig (PHPUGL) 
     </footer>
-  </div> <!-- end of #container -->
+  </div>
 
   <!-- scripts concatenated and minified via ant build script-->
-  <script src="scripts/lib/jquery-1.6.1.min.js"></script>
+  <script src="scripts/lib/jquery-1.6.2.min.js"></script>
   <script src="scripts/application.js"></script>
   <!-- end concatenated and minified scripts-->
- 
-  <!--[if lt IE 7 ]>
-    <script src="scripts/lib/dd_belatedpng.js"></script>
-    <script> DD_belatedPNG.fix('img, .png_bg'); </script>
-  <![endif]-->
 
   <!-- Piwik -->
   <script type="text/javascript">
