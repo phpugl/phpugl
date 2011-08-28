@@ -1,6 +1,5 @@
 layout: default.twig
 ---
-
 # Impressum
 
 PHP User Group Leipzig
