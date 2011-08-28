@@ -1,2 +1,20 @@
-PHP UG Leipzig
+# PHPUGL - PHP UserGroup Leipzig
+
+Dieses Repository enthält den Inhalt zur Webseite von phpugl.de. Der Inhalt wird mit [Phrozn] generiert.
+
+## Phrozn Abhängigkeiten
+pear install Console_CommandLine
+pear install Console_Color
+
+## Auschecken
+src> git clone git://github.com/nogo/phpugl.git .phrozn
+src> cd .phrozn
+src/.phrozn> git submodule update --init
+
+## für die Dev-Branch
+src/.phrozn> git branch dev --track origin/dev
+
+## Build
+src/.phrozn> cd ..
+src> .phrozn/phr up . PATH_TO_TARGET
 
