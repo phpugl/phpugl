@@ -1,7 +1,7 @@
 layout: default.twig
 ---
 
-## Termin für das Nächstes Treffen: 29. September 2011, 19:30 Uhr
+## Termin für das nächste Treffen: 29. September 2011, 19:30 Uhr
 
 ## Demnächst Coding-Wochenende mit Symfony2?
 
@@ -11,7 +11,7 @@ layout: default.twig
 
 Die PHP Usergroup Leipzig lädt herzlich alle PHP Interessierten zum Treffen am 25.08.2011 ein. Das Treffen soll einen regen Austausch über Neuigkeiten, Fakten und Best Practices in der Programmierung mit PHP schaffen.
 
-Wenn das Wetter mitspielt, wollen wir das ganze ins Freie verlegen. Dazu wird am Mittwoch vorher noch mal eine Info (Twitter: [@phpugl]) kommen, wo wir uns dann treffen werden. Im Regenfall bleibt die angegebene Adresse.
+Wenn das Wetter mitspielt, wollen wir das Ganze ins Freie verlegen. Dazu wird am Mittwoch vorher noch mal eine Info (Twitter: [@phpugl]) kommen, wo wir uns dann treffen werden. Im Regenfall bleibt die angegebene Adresse.
 
 Einige Themen:
 
@@ -23,7 +23,7 @@ Einige Themen:
 
 **[Update]** *von Danilo Kühn – Datum: 25.08.11*
 
-Aufgrund des schönen Wetter heute werden wir uns im [Acapulco], Karl-Liebknecht-Straße 42, 04107 Leipzig treffen. Tisch ist reserviert. Also dann bis heute abend.
+Aufgrund des schönen Wetters heute werden wir uns im [Acapulco], Karl-Liebknecht-Straße 42, 04107 Leipzig treffen. Tisch ist reserviert. Also dann bis heute abend.
 
 [Acapulco]: http://g.co/maps/58vm
 
