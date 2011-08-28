@@ -1,17 +1,13 @@
 layout: default.twig
 ---
 
-## Update: Treffen 25. August, 19.30 Uhr
+## Termin für das Nächstes Treffen: 29. September 2011, 19:30 Uhr
 
-von Danilo Kühn – Datum: 25.08.11
-
-Aufgrund des schönen Wetter heute werden wir uns im [Acapulco], Karl-Liebknecht-Straße 42, 04107 Leipzig treffen. Tisch ist reserviert. Also dann bis heute abend.
-
-[Acapulco]: http://g.co/maps/58vm
+## Demnächst Coding-Wochenende mit Symfony2?
 
 ## Nächstes Treffen am 25. August
 
-von Danilo Kühn / Tim Heil – Datum: 23.08.11
+*von Danilo Kühn / Tim Heil – Datum: 23.08.11*
 
 Die PHP Usergroup Leipzig lädt herzlich alle PHP Interessierten zum Treffen am 25.08.2011 ein. Das Treffen soll einen regen Austausch über Neuigkeiten, Fakten und Best Practices in der Programmierung mit PHP schaffen.
 
@@ -25,11 +21,16 @@ Einige Themen:
 
 [@phpugl]: http://www.twitter.com/phpugl
 
-## Demnächst Coding-Wochenende mit Symfony2?
+**[Update]** *von Danilo Kühn – Datum: 25.08.11*
 
-### Kurzer Rückblick auf das Treffen im Juli
+Aufgrund des schönen Wetter heute werden wir uns im [Acapulco], Karl-Liebknecht-Straße 42, 04107 Leipzig treffen. Tisch ist reserviert. Also dann bis heute abend.
 
-von Tim Heil – Datum: 28.07.11
+[Acapulco]: http://g.co/maps/58vm
+
+
+## Kurzer Rückblick auf das Treffen im Juli
+
+*von Tim Heil – Datum: 28.07.11*
 
 Das zur Zeit vielleicht schönste Projekt nebenher: [Phrozn]. Auch als Webentwickler sind viele von uns ja wenig davon angetan, längere Texte im Browser zu schreiben. Phrozn generiert aus einfachen Textdateien fertige Webseiten. Im eigenen Editor schreiben, den Generator (der auch Komponenten aus dem Zend Framework sowie von Symfony2 verwendet) anpassen – ganz nach unserem Geschmack. Also gibt es demnächst wohl auch einen Feed zum Abonnieren unserer Seite, oder die eine oder andere Navigationshilfe für die nun langsam ins Rollen kommende Seite.
 
