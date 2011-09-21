@@ -5,6 +5,10 @@ layout: default.twig
 
 ## Demnächst Coding-Wochenende mit Symfony2?
 
+Terminfindung für Coding-Wochenende: [Doodle]
+
+[Doodle]: http://doodle.com/mrzr478aifiudrez#table
+
 ## Nächstes Treffen am 25. August
 
 *von Danilo Kühn / Tim Heil – Datum: 23.08.11*
