@@ -3,6 +3,20 @@ layout: default.twig
 
 # Rückblick
 
+## September 2011
+
+*von Danilo Kühn – Datum: 26.09.2011*
+
+Bei diesem Treffen werde ich das Framework [Silex] vorstellen und eine kleine Anwendung damit erzeugen um die Fähigkeiten zu präsentieren. Weiterhin werden wir die Planungen zum Coding-Wochenende vorantreiben und uns über das Model gedanken machen. Wer mehr zum Coding Wochenende mit Symfony2 erfahren will, sollte einfach vorbei schauen.
+
+Themen:
+
+* Twittern mit Silex
+* Vorbereitung CWE (Coding-Wochenende)
+* Was wird der Symfony Day in Köln bringen?
+
+[Silex]: http://silex.sensiolabs.org/
+
 ## August 2011
 
 *von Danilo Kühn / Tim Heil – Datum: 23.08.11*

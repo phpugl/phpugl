@@ -6,17 +6,18 @@ layout: default.twig
 Die PHP Usergroup Leipzig grüßt alle PHP-Interessierten in und um Leipzig. Wir treffen uns jeden letzten Donnerstag im Monat.
 Dadurch soll ein reger Austausch über Neuigkeiten, Fakten und Best Practices in der Entwicklung von und mit PHP geschaffen werden.
 
-## Nächstes Treffen: 29. September 2011, 19:30 Uhr
+## Nächstes Treffen: 27. Oktober 2011, 20:30 Uhr
 
-*von Danilo Kühn – Datum: 26.09.2011*
+*von Danilo Kühn – Datum: 24.10.2011*
 
-Bei diesem Treffen werde ich das Framework [Silex] vorstellen und eine kleine Anwendung damit erzeugen um die Fähigkeiten zu präsentieren. Weiterhin werden wir die Planungen zum Coding-Wochenende vorantreiben und uns über das Model gedanken machen. Wer mehr zum Coding Wochenende mit Symfony2 erfahren will, sollte einfach vorbei schauen.
+Achtung! Das nächste Treffen findet am 27.10.2011 um 20:30 statt. Die Themen werden durch Frank, Tim und mich gestaltet. Frank wird einen kleinen Einblick in Wordpress geben. Weiterhin war Tim auf dem Symfony-Day in Köln und hat dort einen Workshop besucht. Ich selbst werde eine kleines Symfony2-Projekt vorstellen und über das eine oder andere Hinternis reden. Neben den Themen geht es weiter um die Planung zur Codingwochenende, sowie der PHPUGL Gestaltung.
 
 Themen:
 
-* Twittern mit Silex
-* Vorbereitung CWE (Coding-Wochenende)
-* Was wird der Symfony Day in Köln bringen?
+* Wordpress Einblick (Frank)
+* Symfony-Day in Köln (Tim)
+* Vorstellung: Symfony2 Projekt (Danilo)
+* Vorbereitung des Codingwochenende am 12. und 13. November 2011 
 
 Ort:
 
@@ -24,14 +25,3 @@ Ort:
 	Brandvorwerkstr. 52 – 54
 	04275 Leipzig
 	Deutschland
-
-
-[Silex]: http://silex.sensiolabs.org/
-
-## Demnächst Coding-Wochenende mit Symfony2?
-
-Terminfindung für Coding-Wochenende: [Doodle]
-
-[Doodle]: http://doodle.com/mrzr478aifiudrez#table
-
-
