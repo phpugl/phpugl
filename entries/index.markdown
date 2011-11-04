@@ -6,18 +6,27 @@ layout: default.twig
 Die PHP Usergroup Leipzig grüßt alle PHP-Interessierten in und um Leipzig. Wir treffen uns jeden letzten Donnerstag im Monat.
 Dadurch soll ein reger Austausch über Neuigkeiten, Fakten und Best Practices in der Entwicklung von und mit PHP geschaffen werden.
 
-## Nächstes Treffen: 27. Oktober 2011, 20:30 Uhr
+## CWE2011: Symfony2, 12. und 13. November 2011
 
-*von Danilo Kühn – Datum: 24.10.2011*
+*von Danilo Kühn – Datum: 04.11.2011*
 
-Achtung! Das nächste Treffen findet am 27.10.2011 um 20:30 statt. Die Themen werden durch Frank, Tim und mich gestaltet. Frank wird einen kleinen Einblick in Wordpress geben. Weiterhin war Tim auf dem Symfony-Day in Köln und hat dort einen Workshop besucht. Ich selbst werde eine kleines Symfony2-Projekt vorstellen und über das eine oder andere Hinternis reden. Neben den Themen geht es weiter um die Planung zur Codingwochenende, sowie der PHPUGL Gestaltung.
+Am 12. und 13. Novemebr finden das Coding-Wochenende (CWE) der PHPUGL statt. Thema der Veranstaltung wird Symfony2 sein. Wir wollen das Framework auf Tauglichkeit prüfen und dessen Funktionsumfang kennenlernen. Dafür wird ein OpenSource-Projekt in Leben gerufen, um das Framework auch praktisch testen zu können.
+
+Details des Projektes werden beim Kick-Off Meeting am 12. November um 10 Uhr bekannt gegeben. Dabei wollen wir Arbeitspakete erzeugen die dann in kleineren Gruppen abgearbeitet werden sollen. 
+
+Momentan gibt es leider noch ein paar kleiner Probleme mit den Räumlichkeiten aber dieser werden noch rechtzeitig gelöst. Details dazu folgen in den nächsten Tagen.
+
+Wer jemand Fragen haben sollte, dann lautet die E-Mail [info] 
+
+[info]: mailto:info@phpugl.de
+
+## Nächstes Treffen: 24. November 2011, 20:30 Uhr
+
+*von Danilo Kühn – Datum: 04.11.2011*
 
 Themen:
-
-* Wordpress Einblick (Frank)
-* Symfony-Day in Köln (Tim)
-* Vorstellung: Symfony2 Projekt (Danilo)
-* Vorbereitung des Codingwochenende am 12. und 13. November 2011 
+ 
+    Werde noch vorbereitet
 
 Ort:
 
