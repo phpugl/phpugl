@@ -8,6 +8,27 @@ Dadurch soll ein reger Austausch über Neuigkeiten, Fakten und Best Practices in
 
 ## CWE2011: Symfony2, 12. und 13. November 2011
 
+*[Update] von Danilo Kühn – Datum: 09.11.2011*
+
+Hier die Adressen wo das CWE2011 stattfinden soll. Das Kick-Off Meeting um 10 Uhr findet definitiv bei [ProjektMOTOR] statt. Dannach werden wir uns in Gruppen aufteilen und die einzelnen Arbeitspakete angehen.
+
+### 12. November 2011: ###
+
+	ProjektMOTOR GmbH
+	Alfred-Kästner-Str. 33
+	04275 Leipzig
+	Deutschland
+
+### 13. November 2011: ###
+
+	Bürogemeinschaft 12345, 3. Stock
+	Brandvorwerkstr. 52 – 54
+	04275 Leipzig
+	Deutschland
+
+
+[ProjektMOTOR]: http://www.projektmotor.de
+
 *von Danilo Kühn – Datum: 04.11.2011*
 
 Am 12. und 13. Novemebr finden das Coding-Wochenende (CWE) der PHPUGL statt. Thema der Veranstaltung wird Symfony2 sein. Wir wollen das Framework auf Tauglichkeit prüfen und dessen Funktionsumfang kennenlernen. Dafür wird ein OpenSource-Projekt in Leben gerufen, um das Framework auch praktisch testen zu können.
