@@ -10,7 +10,7 @@ Dadurch soll ein reger Austausch über Neuigkeiten, Fakten und Best Practices in
 
 *[Update] von Danilo Kühn – Datum: 09.11.2011*
 
-Hier die Adressen wo das CWE2011 stattfinden soll. Das Kick-Off Meeting um 10 Uhr findet definitiv bei [ProjektMOTOR] statt. Dannach werden wir uns in Gruppen aufteilen und die einzelnen Arbeitspakete angehen. 
+Hier die Adressen wo das CWE2011 stattfinden soll. Das Kick-Off Meeting um 10 Uhr findet definitiv bei [ProjektMOTOR] statt. Dannach werden wir uns in Gruppen aufteilen und die einzelnen Arbeitspakete angehen.
 
 ### 12. November 2011: ###
 
