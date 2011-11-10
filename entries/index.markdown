@@ -12,7 +12,18 @@ Dadurch soll ein reger Austausch über Neuigkeiten, Fakten und Best Practices in
 
 Hier die Adressen wo das CWE2011 stattfinden soll. Das Kick-Off Meeting findet um 10 Uhr findet. Dannach werden wir uns in Gruppen aufteilen und die einzelnen Arbeitspakete angehen.
 
-### 12. und 13. November 2011: ###
+### 12. November 2011:
+
+	10:00    Kick-Off Meeting (Vorbereitung der Arbeitspakete)
+	11:00    Aufteilung in die Gruppen und Arkeitspakete
+	..
+	open end
+
+### 13. November 2011
+
+	Beginn wird am 12. festgelegt
+
+### Adresse
 
 	Bürogemeinschaft 12345, 3. Stock
 	Brandvorwerkstr. 52 – 54
