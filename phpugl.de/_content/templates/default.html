@@ -1,0 +1,68 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="de"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="de"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="de"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="de"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>{% if page.title %}{{ page.title }} - {% endif %} PHPUGL - PHP UserGroup Leipzig</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <!-- MetaTags -- begin -->
+  <meta name="DC.title" content="PHPUGL">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="DC.Description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="keywords" content="{{ site.keywords }}{% if page.keywords %},{{ page.keywords }}{% endif %}{% for tag in page.tags %},{% if tag != 'announcement' %}{{ tag }}{% endif %}{% endfor %}">
+  <meta name="DC.Subject" content="{{ site.keywords }}{% if page.keywords %},{{ page.keywords }}{% endif %}{% for tag in page.tags %},{% if tag != 'announcement' %}{{ tag }}{% endif %}{% endfor %}">
+  <meta name="copyright" content="{{ site.copyright }}">
+  <meta name="DC.Rights" content="{{ site.copyright }}">
+  <meta http-equiv="content-language" content="{{ site.language }}">
+  <meta name="DC.Language" scheme="NISOZ39.50" content="{{ site.language }}">
+  <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}">
+  <meta name="DC.Creator" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}">
+  <meta name="date" content="{% if page.timestamp %}{{ page.timestamp | date('c') }}{% else %}{{ 'now'|date('c') }}{% endif %}">
+  <meta name="DC.date" content="{% if page.timestamp %}{{ page.timestamp | date('c') }}{% else %}{{ 'now'|date('c') }}{% endif %}">
+  <meta name="robots" content="index,follow">
+  <!-- MetaTags -- end -->
+  
+  <link rel="stylesheet" href="{{ site.root }}css/style.css">
+  <script src="{{ site.root }}js/lib/modernizr-2.0.6.min.js"></script>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <div id="logo" role="logo">
+<span class="comment">/**
+ * people in L.E. talking about PHP and development
+ *
+ * @var \PHP\Usergroup\Leipzig
+ */
+</span>
+      <span class="code"><b>public</b> $phpugl;</span>
+      </div>
+      <nav>
+        <a href="{{ site.root }}">Home</a>
+        <a href="{{ site.root }}blog/">Blog</a>
+        <a href="{{ site.root }}group/">Group</a>
+        <a href="{{ site.root }}impressum/">Impressum</a>
+      </nav>
+    </header>
+    <div id="main" role="main">
+    {% block content %}
+    {{ content|raw }}
+    {% endblock %}
+    </div>
+    <footer>
+      [PHPUGL] PHP UserGroup Leipzig 
+    </footer>
+  </div>
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="{{ site.root }}js/lib/jquery-1.6.2.min.js"></script>
+  <script src="{{ site.root }}js/application.js"></script>
+  <!-- end concatenated and minified scripts-->
+</body>
+</html>
+ 

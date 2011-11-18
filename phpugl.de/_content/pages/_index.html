@@ -1,0 +1,17 @@
+---
+title: Home
+keywords: symfony,Symfony2,doctrine,Doctrine2,LSDUG,Leipzg Symfony und Doctrine Usergroup,Web 2.0,HTML5 
+format: none
+posts_filters:
+    has_tags: announcement
+    not:
+        has_tags: draft
+---
+<h1>Willkommen</h1>
+
+<p>Die PHP Usergroup Leipzig grüßt alle PHP-Interessierten in und um Leipzig. Wir treffen uns jeden letzten Donnerstag im Monat.
+Dadurch soll ein reger Austausch über Neuigkeiten, Fakten und Best Practices in der Entwicklung von und mit PHP geschaffen werden.</p>
+	
+{% for post in pagination.posts %}
+{% include 'partial_post.html' %}
+{% endfor %}

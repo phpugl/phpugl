@@ -1,0 +1,18 @@
+site:
+    title: PHP UserGroup Leipzig
+    description: PHP Usergroup Leipzig - Austausch über Neuigkeiten, Fakten und Best Practice zur Programmiersprache PHP
+    author: PHPUGL Team
+    copyright: PHP Usergroup Leipzig
+    keywords: PHP,Leipzig,Usergroup,Best Practice
+    language: de
+    pretty_urls: true
+    posts_fs: hierarchy
+    posts_per_page: 20
+    date_format: 'd.m.Y'
+    
+smartypants:
+    enable: true
+
+baker:
+    skip_patterns:
+        - /^index.php/

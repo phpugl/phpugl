@@ -1,0 +1,10 @@
+---
+layout: blog
+format: none
+---
+
+<h2>{{ tag }}</h2>
+
+{% for post in pagination.posts %}
+{% include 'partial_post.html'%}
+{% endfor %}
