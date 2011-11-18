@@ -1,6 +1,6 @@
 # PHPUGL - PHP UserGroup Leipzig
 
-Dieses Repository enthält den Inhalt zur Webseite von phpugl.de. Der Inhalt wird mit [Phrozn] generiert.
+Dieses Repository enthält den Inhalt zur Webseite von phpugl.de. Der Inhalt wird mit [PieCrust] generiert.
 
 [PieCrust]: http://bolt80.com/piecrust/
 
