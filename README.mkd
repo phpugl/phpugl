@@ -2,26 +2,24 @@
 
 Dieses Repository enthält den Inhalt zur Webseite von phpugl.de. Der Inhalt wird mit [Phrozn] generiert.
 
-[Phrozn]: http://www.phrozn.info/
-
-## Phrozn Abhängigkeiten
-
-    pear install Console_CommandLine
-    pear install Console_Color
+[PieCrust]: http://bolt80.com/piecrust/
 
 ## Auschecken
 
-Das Repo muss momentan im Verzeichnis ".phrozn" liegen, damit die Seite generiert werden kann. Phrozn selbst wird über ein Submodule in "vendors" integriert. 
+PieCrust liegt momentan vollständig im Repo und wird so bald verfügbar als Git-Module eingebunden. Es hat auch keine Abhängigkeiten.
 
-    src> git clone git://github.com/nogo/phpugl.git .phrozn
-    src> cd .phrozn
-    src/.phrozn> git submodule update --init
-
+    src> git clone git://github.com/phpugl/phpugl.git webseite
+    src> cd webseite
+    
 ## für Testzwecke den Dev-Branch integrieren
 
-    src/.phrozn> git branch dev --track origin/dev
+    src/webseite> git branch dev --track origin/dev
 
-## Build
+## Build (Lokal)
 
-    src/.phrozn> cd ..
-    src> .phrozn/phr up . /PATH/TO/TARGET
+    src/webseite> _piecrust/chef bake phpugl.de -f -o /path/to/www
+
+    Optionen:
+    -f    ...Seite wird vollständig "neugebacken"
+    -o    ...Ausgabe-Pfad festlegen
+    -r    ...URL-Rewrite - Angabe der Site-Root-URL (Bsp. localhost/phpugl/www/)
