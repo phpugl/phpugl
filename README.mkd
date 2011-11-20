@@ -6,16 +6,11 @@ Dieses Repository enthält den Inhalt zur Webseite von phpugl.de. Der Inhalt wir
 
 ## Auschecken
 
-PieCrust liegt momentan vollständig im Repo und wird so bald verfügbar als Git-Module eingebunden. Der Generator hat keine Abhängigkeiten.
+PieCrust liegt als Submodule im Repo und muss nach dem Auschecken aktualisiert werden. PieCrust selbst hat keine Abhängigkeiten.
 
     src> git clone git://github.com/phpugl/phpugl.git webseite
     src> cd webseite
-    
-## für Testzwecke den Dev-Branch integrieren
-
-Der Dev-Branch hält momentan die "alte" Phrozn Struktur, das wird aber bald geändert.
-
-    src/webseite> git branch dev --track origin/dev
+    src/webseite> git submodule update --init
 
 ## Build (Lokal)
 
@@ -27,3 +22,10 @@ Um die Seite zu bauen müsst Ihr euch im Git-Verzeichnes befinden. Sonst funktio
     -f    ...Seite wird vollständig "neugebacken"
     -o    ...Ausgabe-Pfad festlegen
     -r    ...URL-Rewrite - Angabe der Site-Root-URL (Bsp. localhost/phpugl/www/)
+    
+## für Testzwecke den Dev-Branch integrieren
+
+Der Dev-Branch hält momentan die "alte" Phrozn Struktur, das wird aber bald geändert.
+
+    src/webseite> git branch dev --track origin/dev
+
