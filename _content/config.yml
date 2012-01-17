@@ -6,7 +6,7 @@ site:
     keywords: PHP,Leipzig,Usergroup,Best Practice
     language: de
     pretty_urls: true
-    posts_fs: hierarchy
+    posts_fs: shallow
     posts_per_page: 20
     date_format: 'd.m.Y'
     
