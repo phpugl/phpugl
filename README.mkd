@@ -1,31 +1,37 @@
 # PHPUGL - PHP UserGroup Leipzig
 
-Dieses Repository enthält den Inhalt zur Webseite von phpugl.de. Der Inhalt wird mit [PieCrust] generiert.
+Diese Repository enthält den Inhalt der Webseite http://phpugl.de welcher durch den statischen Webseitengenerator [PieCrust] generiert wird.
 
 [PieCrust]: http://bolt80.com/piecrust/
 
-## Auschecken
+## Vorbereitung
 
-PieCrust liegt als Submodule im Repo und muss nach dem Auschecken aktualisiert werden. PieCrust selbst hat keine Abhängigkeiten.
+PieCrust muss als erstes ausgescheckt werden.
 
-    src> git clone git://github.com/phpugl/phpugl.git webseite
-    src> cd webseite
-    src/webseite> git submodule update --init
+    src> git clone git://github.com/ludovicchabant/PieCrust.git piecrust
+    src> cd piecrust
 
-## Build (Lokal)
+Danach clonen wir den Inhalt der Webseite in den PieCrust-Ordner.
 
-Um die Seite zu bauen müsst Ihr euch im Git-Verzeichnes befinden. Sonst funktioniert der untenangegebene Befehl nicht. 
+    src/piecrust> git clone git@github.com:phpugl/phpugl.git phpugl.de
 
-    src/webseite> _piecrust/chef bake phpugl.de -f -o /path/to/www
+## Inhalt der Seite bearbeiten
+
+Den Inhalt der Seite wird unter "src/piecrust/phpugl.de/_content" angelegt und bearbeitet.
+
+    _content/
+      pages/    ...Inhalt für normale Seite
+      posts/    ...Inhalt der Posts für den Blog
+
+Unter **"posts"** gibt es eine Beispielseite (MONTH-DAY_DUMMY-POST.html) wie ein Post aufgebaut werden sollte. Wenn Ihr einen Beitrag schreibt nehmt das einfach als Vorlage.
+
+## Seite bauen lassen
+
+Der Inhalt wird mit PieCrust in der Console erstellt. Dafür muss der folgende Befehl ausgeführt werden.
+
+    src/piecrust> _piecrust/chef bake phpugl.de -f -o /path/to/www
 
     Optionen:
     -f    ...Seite wird vollständig "neugebacken"
     -o    ...Ausgabe-Pfad festlegen
     -r    ...URL-Rewrite - Angabe der Site-Root-URL (Bsp. localhost/phpugl/www/)
-    
-## für Testzwecke den Dev-Branch integrieren
-
-Der Dev-Branch hält momentan die "alte" Phrozn Struktur, das wird aber bald geändert.
-
-    src/webseite> git branch dev --track origin/dev
-
