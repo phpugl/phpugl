@@ -25,6 +25,10 @@ Den Inhalt der Seite wird unter "src/piecrust/phpugl.de/_content" angelegt und b
 
 Unter **"posts"** gibt es eine Beispielseite (MONTH-DAY_DUMMY-POST.html) wie ein Post aufgebaut werden sollte. Wenn Ihr einen Beitrag schreibt nehmt das einfach als Vorlage.
 
+    Tags:
+      announcement  ...Post wird auf der Startseite angezeigt
+      draft         ...Post wird nicht generiert
+
 ## Seite bauen lassen
 
 Der Inhalt wird mit PieCrust in der Console erstellt. Dafür muss der folgende Befehl ausgeführt werden.
