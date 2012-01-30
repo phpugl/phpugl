@@ -3,6 +3,8 @@
 	
 	{{ post.content | raw }}
 	
+	{% if post.has_more %}<a href="{{post.url}}">mehr...</a>{% endif %}
+	
 	<footer>
 	  {{ post.author }} - <time pubdate="pubdate">{{ post.date }}&nbsp;{{ post.time }}</time>
 		{% if post.category %}
