@@ -1,0 +1,40 @@
+---
+title: Symfony 2 bringt Entwickler zusammen
+author: Tim Heil
+time: 12:00
+tags: [Retrospective, CWE, Symfony2, Dime]
+---
+
+## Symfony 2 bringt Entwickler zusammen
+*Rückblick zum 26. Januar 2012*
+
+Erfreulicherweise hatten wir diesen Monat wieder neue Mitglieder zu begrüßen: mit Marcel, Stefan, Thomas und Frank hat sich unsere Usergroup um vier Personen vergrößert – Anlass war unter anderem das Interesse am von uns sehr geschätzten Framework Symfony 2.
+
+Besprochen wurden u. a. das weitere Vorgehen bei der Entwicklung unseres Timetrackers [Dime] und das [Coding-Wochenende] am 4./ 5. Februar. Zum Abschluss gab es noch einen kurzen Exkurs zu Shopsystemen von Mike.
+
+[Dime]: https://github.com/phpugl/CWE2011/
+[Coding-Wochenende]: http://phpugl.de/2012/01/30/CWE-2012-01-Dime-a-Symfony2-based-Timetracker/
+
+### Dime
+
+Thomas hat einen Prototypen für das InvoiceBundle für Dime vorgestellt und diverse Ideen dazu geäußert. Verwendet wurde hier erstmal Twig – Vorteil gegenüber backbone.js war die geringere Einarbeitung, der Anschluss an das bestehende Frontend in backbone.js ist jedoch vorgesehen. Bei den Forms gab es hier zunächst ein kleines Problem: die Elemente konnten von Twig teilweise nicht richtig dargestellt werden. Mittlerweile gibt es in den [Twig Docs] jedoch eine Einführung in das Thema.
+
+Die erste von Thomas vorgestellte Variante zum InvoiceBundle ist direkt in Dime integriert, während ein zweiter Vorschlag von Tim eine eigene Applikation vorsieht, welche per XML die Collections anfragt und auswertet. In Hinblick auf die weitere Implementierung muss nun entschieden werden, welche der beiden Varianten erfolgversprechender ist.
+
+Es wurde beschlossen das [JMSSerializerBundle] zur sauberen Generierung von JSON zu verwenden.
+
+[Twig Docs]: http://twig.sensiolabs.org/doc/functions/attribute.html
+[JMSSerializerBundle]: https://github.com/schmittjoh/JMSSerializerBundle
+
+### Coding-Wochenende
+
+Beim [Coding-Wochenende] wird es zwei Tracks geben:
+
+1. Symfony und Doctrine
+2. Javascript / backbone.js
+
+Für alle, die neu dazustoßen und noch keine Erfahrung mit Symfony oder backbone.js haben wird es bei Bedarf eine kurze Einführung geben. Bitte meldet euch vorher kurz, falls möglich.
+
+Das nächste Treffen ist zugleich das Coding-Wochenende, zu dem wir alle Interessierten noch einmal herzlich einladen möchten.
+
+[Coding-Wochenende]: http://phpugl.de/2012/01/30/CWE-2012-01-Dime-a-Symfony2-based-Timetracker/
