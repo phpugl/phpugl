@@ -6,17 +6,6 @@
 	
 	{{ content | raw }}
 	
-	<footer>
-	  {{ page.author }} - <time pubdate="pubdate">{{ page.date }}&nbsp;{{ page.time }}</time>
-		{% if page.category %}
-			in <span class="post-cat"><a href="{{ pccaturl(page.category) }}">{{ page.category }}</a></span>
-		{% endif %}
-		{% if page.tags %}
-			&mdash;
-			{% for tag in page.tags %} {% if tag != 'announcement' %}
-			<a href="{{ pctagurl(tag) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
-			{% endif %}{% endfor %}
-		{% endif %}
-	</footer>
+	{% include 'post_footer.html' with {'post': page} %}
 </article>
 {% endblock %}
