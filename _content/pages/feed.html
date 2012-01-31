@@ -10,23 +10,18 @@ posts_filters:
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-        <title>PHPUGL News feed</title>
-        <link href="{{ site.root }}feed/" rel="self" />
-        <link href="{{ site.root }}" />
-        <id>urn:uuid:60a76c80-d399-11d9-b91C-0003939e0af6</id>
-        <updated>{{ "now" | date('c') }}</updated>
-        <author>
-                <name>John Doe</name>
-                <email>johndoe@example.com</email>
-        </author>
-
-		{% for post in pagination.posts %}
-		<entry>
-                <title>{{ post.title }}</title>
-                <link href="{{ post.url }}" />
-                <id>{{ post.uuid }}</id>
-                <updated>{{ post.timestamp | date('c') }}</updated>
-                <summary type="html"><![CDATA[{{ post.content | raw }}]]></summary>
+    <title>PHPUGL</title>
+    <link href="{{ site.root }}feed/" rel="self" />
+    <link href="{{ site.root }}" />
+    <id>urn:uuid:60a76c80-d399-11d9-b91C-0003939e0af6</id>
+    <updated>{{ "now" | date('c') }}</updated>
+    {% for post in pagination.posts %}
+        <entry>
+            <title>{{ post.title }}</title>
+            <link href="{{ post.url }}" />
+            <id>{{ post.uuid }}</id>
+            <updated>{{ post.timestamp | date('c') }}</updated>
+            <summary type="html"><![CDATA[{{ post.content | raw }}]]></summary>
         </entry>
-		{% endfor %}
+    {% endfor %}
 </feed>
