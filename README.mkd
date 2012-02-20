@@ -29,6 +29,14 @@ Unter **"posts"** gibt es eine Beispielseite (MONTH-DAY_DUMMY-POST.html) wie ein
       announcement  ...Post wird auf der Startseite angezeigt
       draft         ...Post wird nicht generiert
 
+Um einen neuen Post zu erstellen gibt es jetzt die Möglichkeit die Commandline zu benutzen. Das Commando erzeugt automatisch die Datei mit Datum und übergibt die angegeben Parameter.
+
+    Hilfe für Post-Command:
+    src/piecrust/phpugl.de>../_piecrust/chef post --help
+    
+    Beispiel:
+    src/piecrust/phpugl.de>../_piecrust/chef post --author=Max Muster -t Treffen in diesem Jahr
+
 ## Seite bauen lassen
 
 Der Inhalt wird mit PieCrust in der Console erstellt. Dafür muss der folgende Befehl ausgeführt werden. Ihr solltest euch im "phpugl.de" Ordner befinden.
