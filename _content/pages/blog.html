@@ -6,8 +6,6 @@ posts_filters:
     not:
         has_tags: draft
 ---
-<h1>{{ page.title }}</h1>
-
 {% for post in pagination.posts %}
 {% include 'partial_post.html' %}
 {% endfor %}
