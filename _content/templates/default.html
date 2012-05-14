@@ -38,7 +38,7 @@
   <div class="container">
     <header>
       <h1 id="logo" role="logo">/**
- * people in L.E. 
+ * Developer in Leipzig
  * talking about PHP and development
  *
  * @var \PHP\Usergroup\Leipzig
@@ -51,13 +51,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </a>
-            <a class="brand code" href="{{ site.root }}"><b>public</b> $phpugl;</a>
+            <a class="brand code" href="{{ site.root }}"><b>public</b> $phpugl =</a>
             <div class="nav-collapse">
               <ul class="nav">
-                <li><a href="{{ site.root }}">Home</a></li>
-                <li><a href="{{ site.root }}blog/">Blog</a></li>
-                <li><a href="{{ site.root }}group/">Group</a></li>
-                <li><a href="{{ site.root }}impressum/">Impressum</a></li>
+                <li{% if page.active == "home" %} class="active"{% endif %}><a class="code" href="{{ site.root }}">[ Home, </a></li>
+                <li{% if page.active == "blog" %} class="active"{% endif %}><a class="code" href="{{ site.root }}blog/">Blog, </a></li>
+                <li{% if page.active == "groups" %} class="active"{% endif %}><a class="code" href="{{ site.root }}group/">Group, </a></li>
+                <li{% if page.active == "impress" %} class="active"{% endif %}><a class="code" href="{{ site.root }}impressum/">Impressum ];</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div>
