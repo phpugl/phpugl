@@ -1,14 +1,9 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="de"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="de"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="de"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="de"> <!--<![endif]-->
+<html lang="de">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
   <title>{% if page.title %}{{ page.title }} - {% endif %} PHPUGL - PHP UserGroup Leipzig</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- MetaTags -- begin -->
   <meta name="DC.title" content="PHPUGL">
@@ -27,43 +22,77 @@
   <meta name="robots" content="index,follow">
   <!-- MetaTags -- end -->
   
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="{{ site.root }}css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ site.root }}css/bootstrap-responsive.min.css">
   <link rel="stylesheet" href="{{ site.root }}css/style.css">
+  
   <link href="{{ site.root }}feed.atom" type="application/atom+xml" rel="alternate" title="PHPUGL" >
-  <script src="{{ site.root }}js/lib/modernizr-2.0.6.min.js"></script>
 </head>
-<body>
-  <div id="container">
+<body>  
+  <div class="container">
     <header>
-      <div id="logo" role="logo">
-<span class="comment">/**
- * people in L.E. talking about PHP and development
+      <h1 id="logo" role="logo">/**
+ * people in L.E. 
+ * talking about PHP and development
  *
  * @var \PHP\Usergroup\Leipzig
- */
-</span>
-      <span class="code"><b>public</b> $phpugl;</span>
-      </div>
-      <nav>
-        <a href="{{ site.root }}">Home</a>
-        <a href="{{ site.root }}blog/">Blog</a>
-        <a href="{{ site.root }}group/">Group</a>
-        <a href="{{ site.root }}impressum/">Impressum</a>
+ */</h1>
+      <nav class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand code" href="{{ site.root }}"><b>public</b> $phpugl;</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="{{ site.root }}">Home</a></li>
+                <li><a href="{{ site.root }}blog/">Blog</a></li>
+                <li><a href="{{ site.root }}group/">Group</a></li>
+                <li><a href="{{ site.root }}impressum/">Impressum</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
       </nav>
     </header>
-    <div id="main" role="main">
-    {% block content %}
-    {{ content|raw }}
-    {% endblock %}
+    <div id="content">
+      <div class="row">
+        <section class="span10">
+          {% block content %}
+          {{ content|raw }}
+          {% endblock %}
+        </section>
+        <aside class="span2">
+          <img src="{{ site.root }}img/phpugl.jpg" alt="PHPUGL">
+          <h2>Kalender</h2>
+          <p><a href="http://ical.phpugl.de" target="_blank"><img src="https://www.google.com/calendar/images/ical.gif" alt="ICAL" ></a> <a href="http://calendar.phpugl.de" target="_blank"><img src="https://www.google.com/calendar/images/html.gif" alt="HTML" ></a></p>
+          <h2>Twitter</h2>
+          <p><a href="https://twitter.com/#!/phpugl">@phpugl</a></p>
+          <h2>IRC</h2>
+          <p><a href="irc://irc.freenode.net/phpugl">#phpugl</a></p>
+          <h2>Github</h2>
+          <p><a href="https://github.com/phpugl">Repositories</a></p>
+          {% block sidebar %}
+          {{ sidebar|raw }}
+          {% endblock %}
+       </aside>
+      </div>
     </div>
-    <footer>
-      [PHPUGL] PHP UserGroup Leipzig 
+    <footer class="footer">
+      [PHPUGL] PHP UserGroup Leipzig
     </footer>
-  </div>
-
-  <!-- scripts concatenated and minified via ant build script-->
-  <script src="{{ site.root }}js/lib/jquery-1.6.2.min.js"></script>
-  <script src="{{ site.root }}js/application.js"></script>
-  <!-- end concatenated and minified scripts-->
+  </div> <!--! end of #container -->
+  <script src="{{ site.root }}js/jquery.min.js"></script>
+  <script src="{{ site.root }}js/bootstrap.min.js"></script>
   
   <!-- Piwik -->
   <script type="text/javascript">
@@ -79,4 +108,3 @@
   <!-- End Piwik Tracking Code -->
 </body>
 </html>
- 
