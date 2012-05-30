@@ -8,9 +8,11 @@ posts_filters:
     not:
         has_tags: draft
 ---
-<p>Die PHP Usergroup Leipzig grüßt alle PHP-Interessierten in und um Leipzig. Wir treffen uns jeden letzten Donnerstag im Monat.
+<div class="hero-unit">
+<h1>Willkommen</h1>
+<p>Die PHP UserGroup Leipzig grüßt alle PHP-Interessierten in und um Leipzig. Wir treffen uns jeden letzten Donnerstag im Monat.
 Dadurch soll ein reger Austausch über Neuigkeiten, Fakten und Best Practices in der Entwicklung von und mit PHP geschaffen werden.</p>
-<hr />
+</div>
 {% for post in pagination.posts %}
 {% include 'partial_post.html' %}
 {% endfor %}
