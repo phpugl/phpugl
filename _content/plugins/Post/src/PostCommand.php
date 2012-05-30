@@ -55,7 +55,7 @@ class PostCommand extends ChefCommand
         $pieCrust = $context->getApp();
         $result = $context->getResult();
                 
-        $timestamp = mktime();
+        $timestamp = time();
         
         if ($result->command->options['title'] === NULL) {
           throw new Exception('Give a title to post');
