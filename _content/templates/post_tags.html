@@ -1,0 +1,6 @@
+{% if post.tags %}
+<i class="icon-tags hide-text">Tags:</i>
+[ {% for tag in post.tags %} {% if tag != 'announcement' %}
+<a href="{{ pctagurl(tag) }}">{{ tag }}</a>{% if not loop.last %} | {% endif %}
+{% endif %}{% endfor %} ]
+{% endif %}
