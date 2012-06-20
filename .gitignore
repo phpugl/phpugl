@@ -2,3 +2,4 @@
 .vim*
 _cache/*
 _counter
+.idea
