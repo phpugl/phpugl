@@ -5,12 +5,16 @@
 {{ content|raw }}
 
 <div id="navigation">
-	{% if pagination.prev_page %}
-		&laquo;&nbsp;<a href="{{ pcurl(pagination.prev_page) }}" id="navigation-next">Neuere Beiträge</a>
+	<div class="pull-right">
+        {% if pagination.next_page %}
+        <a href="{{ pcurl(pagination.next_page) }}" id="navigation-next" class="btn">Ältere Beiträge <i class="icon-arrow-right"></i></a>
+        {% endif %}
+	</div>
+    <div>
+    {% if pagination.prev_page %}
+		<a href="{{ pcurl(pagination.prev_page) }}" id="navigation-next" class="btn"><i class="icon-arrow-left"></i> Neuere Beiträge</a>
 	{% endif %}
-	{% if pagination.next_page %}
-		<a href="{{ pcurl(pagination.next_page) }}" id="navigation-next">Ältere Beiträge</a>&nbsp;&raquo;
-	{% endif %}
+    </div>
 </div>
 
 {% endblock %}

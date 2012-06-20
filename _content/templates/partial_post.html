@@ -1,9 +1,13 @@
 <article>
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <header class="page-header">
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      <small>
+      {% include 'post_author.html' with {'post': post} %}
+      {% include 'post_tags.html' with {'post': post} %}
+      </small>
+  </header>
+
+  {{ post.content | raw }}
 	
-	{{ post.content | raw }}
-	
-	{% if post.has_more %}<a href="{{post.url}}">mehr...</a>{% endif %}
-	
-	{% include 'post_footer.html' with {'post': post} %}
+  {% if post.has_more %}<a href="{{post.url}}">mehr...</a>{% endif %}
 </article>

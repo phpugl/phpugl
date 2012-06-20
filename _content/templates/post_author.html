@@ -1,0 +1,1 @@
+<i class="icon-user hide-text">Autor:</i> {{ post.author }} <i class="icon-time hide-text">Time:</i> <time pubdate datetime="{{ post.timestamp | date('c') }}">{{ post.timestamp | date('D d. M Y H:i') }}</time>
