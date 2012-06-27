@@ -5,6 +5,7 @@ use \Console_CommandLine;
 use \Console_CommandLine_Result;
 use PieCrust\Chef\Commands\ChefCommand;
 use PieCrust\Chef\ChefContext;
+use PieCrust\IPieCrust;
 
 class PostCommand extends ChefCommand
 {
@@ -13,7 +14,7 @@ class PostCommand extends ChefCommand
         return 'post';
     }
     
-    public function setupParser(Console_CommandLine $parser)
+    public function setupParser(Console_CommandLine $parser, IPieCrust $pieCrust)
     {
         $parser->description = 'Create a new post for blog.';
         $parser->addOption('author', array(
