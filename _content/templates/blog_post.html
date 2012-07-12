@@ -1,6 +1,6 @@
 <article>
   <header class="page-header">
-      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       <small>
       {% include 'post_author.html' with {'post': post} %}
       {% include 'post_tags.html' with {'post': post} %}
