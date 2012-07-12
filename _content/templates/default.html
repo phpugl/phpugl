@@ -33,16 +33,17 @@
   <link rel="stylesheet" href="{{ site.root }}css/style.css">
   
   <link href="{{ site.root }}feed.atom" type="application/atom+xml" rel="alternate" title="PHPUGL" >
+  <link rel="author" href="humans.txt" />
 </head>
 <body>  
   <div class="container">
     <header>
-      <h1 id="logo" role="logo">/**
+      <div id="logo" role="logo">/**
  * Developer in Leipzig
  * talking about PHP and development
  *
  * @var \PHP\Usergroup\Leipzig
- */</h1>
+ */</div>
       <nav class="navbar">
         <div class="navbar-inner">
           <div class="container">
@@ -55,9 +56,9 @@
             <div class="nav-collapse">
               <ul class="nav">
                 <li{% if page.active == "home" %} class="active"{% endif %}><a class="code" href="{{ site.root }}">[ Home, </a></li>
+                <li{% if page.active == "aboutus" %} class="active"{% endif %}><a class="code" href="{{ site.root }}projects"> Über uns, </a></li>
                 <li{% if page.active == "blog" %} class="active"{% endif %}><a class="code" href="{{ site.root }}blog/">Blog, </a></li>
-                <li{% if page.active == "groups" %} class="active"{% endif %}><a class="code" href="{{ site.root }}group/">Group, </a></li>
-                <li{% if page.active == "impress" %} class="active"{% endif %}><a class="code" href="{{ site.root }}impressum/">Impressum ];</a></li>
+                <li{% if page.active == "projects" %} class="active"{% endif %}><a class="code" href="{{ site.root }}projects"> Projekte ];</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div>
@@ -72,14 +73,20 @@
           {% endblock %}
         </section>
         <aside class="span2">
-          <h2>Kalender</h2>
-          <p><a href="http://ical.phpugl.de" target="_blank"><img src="https://www.google.com/calendar/images/ical.gif" alt="ICAL" ></a> <a href="http://calendar.phpugl.de" target="_blank"><img src="https://www.google.com/calendar/images/html.gif" alt="HTML" ></a></p>
-          <h2>Twitter</h2>
-          <p><a href="https://twitter.com/#!/phpugl">@phpugl</a></p>
-          <h2>IRC</h2>
-          <p><a href="irc://irc.freenode.net/phpugl">#phpugl</a></p>
-          <h2>Github</h2>
-          <p><a href="https://github.com/phpugl">Repositories</a></p>
+          <dl>
+            <dt>Kalender</dt>
+            <dd><a href="http://ical.phpugl.de" target="_blank"><img src="https://www.google.com/calendar/images/ical.gif" alt="ICAL" ></a> <a href="http://calendar.phpugl.de" target="_blank"><img src="https://www.google.com/calendar/images/html.gif" alt="HTML" ></a></dd>
+            <dt>Twitter</dt>
+            <dd><a href="https://twitter.com/#!/phpugl">@phpugl</a></dd>
+            <dt>Google Group</dt>
+            <dd><a href="https://groups.google.com/forum/?fromgroups#!forum/phpugl">phpugl</a></dd>
+            <dt>IRC</dt>
+            <dd><a href="irc://irc.freenode.net/phpugl">#phpugl</a></dd>
+            <dt>Feed</dt>
+            <dd><a href="{{ site.root }}feed.atom" type="application/atom+xml">Atom</a></dd>
+            <dt>Github</dt>
+            <dd><a href="https://github.com/phpugl">Repositories</a></dd>
+          </dl>
           {% block sidebar %}
           {{ sidebar|raw }}
           {% endblock %}
@@ -88,6 +95,9 @@
     </div>
     <footer class="footer">
       [PHPUGL] PHP UserGroup Leipzig
+      <nav>
+        <a href="{{ site.root }}impressum/">Impressum</a>
+      </nav>
     </footer>
   </div> <!--! end of #container -->
   <script src="{{ site.root }}js/lib/jquery.min.js"></script>
