@@ -1,20 +1,20 @@
 /* TEAM */
-Orga: Tim
+Contributor: Tim
 Twitter: @smile_le
-Location: Leipzig, Deutschland
+Location: Leipzig, Germany
 
-Orga: Frank
+Contributor: Frank
 Twitter: @wireshark
-Location: Leipzig, Deutschland
+Location: Leipzig, Germany
 
-Orga: Danilo
+Contributor: Danilo
 Site: http://nogo-software.de
 Twitter: @cge-nogo
-Location: Leipzig, Deutschland
+Location: Leipzig, Germany
 
-Orga: Thomas
+Contributor: Thomas
 Twitter: @quafzi
-Location: Leipzig, Deutschland
+Location: Leipzig, Germany
 
 /* SITE */
 Last update: 2012/07/12
