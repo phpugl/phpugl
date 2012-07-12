@@ -1,10 +1,11 @@
 ---
 layout: blog
+active: blog
 format: none
 ---
 
-<h2>{{ tag }}</h2>
+<h1>Blog &mdash; {{ tag }}</h1>
 
 {% for post in pagination.posts %}
-{% include 'partial_post.html'%}
+{% include 'blog_post.html'%}
 {% endfor %}

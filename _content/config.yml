@@ -3,7 +3,7 @@ site:
     description: PHP Usergroup Leipzig - Austausch über Neuigkeiten, Fakten und Best Practice zur Programmiersprache PHP
     author: PHPUGL Team
     copyright: PHP Usergroup Leipzig
-    keywords: PHP,Leipzig,Usergroup,Best Practice
+    keywords: PHP,Leipzig,Usergroup,Best Practice,Treffen
     language: de
     pretty_urls: true
     posts_fs: shallow
