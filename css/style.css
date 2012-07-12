@@ -99,5 +99,9 @@ article pre code {
     font-size: 16px;
 }
 
+
+aside dl dd {
+    margin-bottom: 15px;
+}
 iframe { border: none; }
 #phpugl_group { width: 100%; }

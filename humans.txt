@@ -1,0 +1,23 @@
+/* TEAM */
+Orga: Tim
+Twitter: @smile_le
+Location: Leipzig, Deutschland
+
+Orga: Frank
+Twitter: @wireshark
+Location: Leipzig, Deutschland
+
+Orga: Danilo
+Site: http://nogo-software.de
+Twitter: @cge-nogo
+Location: Leipzig, Deutschland
+
+Orga: Thomas
+Twitter: @quafzi
+Location: Leipzig, Deutschland
+
+/* SITE */
+Last update: 2012/07/12
+Standards: HTML5, CSS3
+Components: Piecrust, Twitter Bootstrap
+Software: VIM
