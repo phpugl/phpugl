@@ -80,6 +80,8 @@ class PostCommand extends ChefCommand
           $yamlFormatter['tags'] = '[' . join(', ', $result->command->options['tags']) . ']';
         }
         
+        $yamlFormatter['active'] = 'blog';
+        
         $content = "---\n";
         foreach ($yamlFormatter as $k => $v) {
           $content .= sprintf("%s: %s\n", $k, $v);
