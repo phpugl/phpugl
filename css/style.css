@@ -1,35 +1,55 @@
-body, p {
-    font-size: 16px;
-    line-height: 28px;
+body {
+    background: transparent url(../img/background.png) top left repeat-x;  
+    color: #000;    
 }
 
-p {
-    margin-bottom: 14px;
+body, p {
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 17px;
+    line-height: 1.3em;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 2em;
+}
+
+h1 { font-size: 2em; }
+
+h2 { font-size: 1.5em; }
+
+h3, h4, h5, h6 {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+p { margin-bottom: 14px; }
 
 #logo {
-    color: silver;
+    color: #BBB;
     font-family: monospace;
     font-size: 20px;
     font-weight: normal;
     line-height: 24px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 10px;
     white-space: pre;
 }
 
+.navbar {
+}
+
 .navbar .brand {
-    color: #000;
+    color: #777;
     font-variant: normal;
 }
 
 .navbar-inner {
-    background: transparent;
+    background: #FFF;
     filter: none;
 }
 
 .navbar .nav > li > a {
-    color: #000;
+    color: #777;
     font-size: 20px;
     font-weight: normal;
     line-height: 1;
@@ -40,14 +60,16 @@ p {
 
 .navbar .nav > li > a:hover {
     color: #000;
-    background-color: #EFEFEF;
+    background-color: transparent;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05) outset;
 }
 
 .navbar .nav .active > a,
 .navbar .nav .active > a:hover {
     color: #000;
-    background-color: #EFEFEF;
+    background-color: transparent;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05) inset;
+    font-weight: bold;
     padding-left: 13px;
 }
 
@@ -61,10 +83,15 @@ p {
     font-size: 50px;
 }
 
-.page-header small {
-    color: #999999;
+.page-header h1 {
+    line-height: 2em;
+}
+
+.page-header p {
+    color: #777;
     font-size: 18px;
-    font-weight: normal;
+    line-height: 1.5em;
+    margin-bottom: 0;
 }
 
 
@@ -91,22 +118,9 @@ article header small {
 }
 
 article footer {
-
     font-size: 12px;
     margin-bottom: 10px;
     text-align: right;
-}
-
-article pre {
-    background: none;
-    border: none;
-    border-radius: 0px;
-    padding: 0px;
-}
-
-article pre code {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
 }
 
 
