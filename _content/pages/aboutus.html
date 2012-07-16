@@ -4,5 +4,28 @@ active: aboutus
 ---
 
 <header class="page-header">
-  <h1>Wir, <small>über uns.</small></h1>
+  <h1>PHPUGL, <small>das sind wir.</small></h1>
 </header>
+
+<div id="members">
+</div>
+
+---javascript---
+<script type="text/javascript">
+  function renderMembers(response) {
+    for (var i=0; i<response.data.length; i++) {
+      var m = response.data[i];
+      var html = [
+        '<div class="member span4">',
+        '<a href="http://github.com/', m.login ,'" title="', m.login ,'">',
+        '<img alt="', m.login ,'" src="', m.avatar_url ,'" />',
+        '<span class="name">', m.login ,'</span>',
+        '</a>',
+        '</div>'
+      ].join('');
+      $('#members').append(html);
+    }
+  }
+</script>
+<script type="text/javascript" src="https://api.github.com/orgs/phpugl/members?callback=renderMembers"></script>
+
