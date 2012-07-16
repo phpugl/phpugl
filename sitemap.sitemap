@@ -1,0 +1,4 @@
+locations:
+    - url: /
+    - url: phpugl.de
+      changefreq: monthly
