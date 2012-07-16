@@ -1,6 +1,5 @@
 <article>
   <header>
-      {% if post.eventdate %}{% include 'post_eventdate.html' with {'post': post} %}{% endif %}
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       <small>
       {% include 'post_author.html' with {'post': post} %}

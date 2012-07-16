@@ -3,7 +3,6 @@
 {% block content %}
 <article>
     <header class="page-header">
-       {% if page.eventdate %}{% include 'post_eventdate.html' with {'post': page} %}{% endif %}
         <h1>{{ page.title }}</h1>
         <small>
         {% include 'post_author.html' with {'post': page} %}
