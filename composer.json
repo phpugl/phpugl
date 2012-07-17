@@ -1,0 +1,124 @@
+{
+    "name": "phpugl/phpugl",
+    "description": "Page structure for PHP Usergroup Leipzig",
+    "authors": [
+        {
+            "name": "PHPUGL",
+            "email": "info@phpugl.de"
+        }
+    ],
+    "require": {
+        "php": ">= 5.3.0",
+        "bolt80/piecrust": "dev-master"
+    },
+    "config": {
+      "bin-dir": "bin"
+    },
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "http://github.com/ludovicchabant/PieCrust"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "geshi/geshi",
+                "version": "1.0.8.10",
+                "dist": {
+                    "url": "http://sourceforge.net/projects/geshi/files/geshi/GeSHi%201.0.8.10/GeSHi-1.0.8.10.zip/download",
+                    "type": "zip"
+                },
+                "autoload": {
+                    "classmap": [ "geshi.php" ]
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "lessphp/lessphp",
+                "version": "0.3.4",
+                "dist": {
+                    "url": "https://github.com/leafo/lessphp/zipball/v0.3.4-2",
+                    "type": "zip"
+                },
+                "autoload": {
+                    "classmap": [ "lessc.inc.php" ]
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "markdown/markdown",
+                "version": "1.0",
+                "dist": {
+                    "url": "https://github.com/michelf/php-markdown/zipball/master",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "markdown/markdown-extra",
+                "version": "1.0",
+                "dist": {
+                    "url": "https://github.com/michelf/php-markdown/zipball/extra",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "smartypants/smartypants",
+                "version": "1.0",
+                "dist": {
+                    "url": "https://github.com/michelf/php-smartypants/zipball/master",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "smartypants/smartypants-typographer",
+                "version": "1.0",
+                "dist": {
+                    "url": "https://github.com/michelf/php-smartypants/zipball/typo",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "mustache/mustache",
+                "version": "1.1.0",
+                "dist": {
+                    "url": "https://github.com/bobthecow/mustache.php/zipball/v1.1.0",
+                    "type": "zip"
+                },
+                "autoload": {
+                    "classmap": [ "Mustache.php", "MustacheLoader.php" ]
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "textile/textile",
+                "version": "2.0.0",
+                "dist": {
+                    "url": "http://textile.thresholdstate.com/file_download/1/textile-2.0.0.zip",
+                    "type": "zip"
+                },
+                "autoload": {
+                    "classmap": [ "classTextile.php" ]
+                }
+            }
+        }
+    ]
+}

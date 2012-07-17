@@ -6,18 +6,26 @@ Diese Repository enthält den Inhalt der Webseite http://phpugl.de welcher durch
 
 ## Vorbereitung
 
-PieCrust muss als erstes ausgescheckt werden.
+Klone die Webseite in ein geeignetes Verzeichnis.
 
-    src> git clone git://github.com/ludovicchabant/PieCrust.git piecrust
-    src> cd piecrust
+    src> git clone git@github.com:phpugl/phpugl.git phpugl.de
+    src> cd phpugl.de
 
-Danach clonen wir den Inhalt der Webseite in den PieCrust-Ordner.
+Installiere "composer", wenn er noch nicht im System existiert.
 
-    src/piecrust> git clone git@github.com:phpugl/phpugl.git phpugl.de
+    src/phpugl.de> curl -s http://getcomposer.org/installer | php
+
+Installiere vendors mit:
+
+    src/phpugl.de> php composer.phar install 
+
+## Inhalt anschauen
+
+Die Seite enthält eine "index.php". Diese ermöglicht den Inhalt der Seite anzuschauen (Live Preview) ohne das sie gebaut werde muss.
 
 ## Inhalt der Seite bearbeiten
 
-Den Inhalt der Seite wird unter "src/piecrust/phpugl.de/_content" angelegt und bearbeitet.
+Den Inhalt der Seite wird unter "phpugl.de/_content" angelegt und bearbeitet.
 
     _content/
       pages/    ...Inhalt für normale Seite
@@ -32,18 +40,17 @@ Unter **"posts"** gibt es eine Beispielseite (MONTH-DAY_DUMMY-POST.html) wie ein
 Um einen neuen Post zu erstellen gibt es jetzt die Möglichkeit die Commandline zu benutzen. Das Commando erzeugt automatisch die Datei mit Datum und übergibt die angegeben Parameter.
 
     Hilfe für Post-Command:
-    src/piecrust/phpugl.de>../_piecrust/chef post --help
+    src/phpugl.de>bin/chef post --help
     
     Beispiel:
-    src/piecrust/phpugl.de>../_piecrust/chef post --author=Max Muster -t Treffen in diesem Jahr
+    src/phpugl.de>bin/chef post --author=Max Muster -t Treffen in diesem Jahr
 
 ## Seite bauen lassen
 
 Der Inhalt wird mit PieCrust in der Console erstellt. Dafür muss der folgende Befehl ausgeführt werden. Ihr solltest euch im "phpugl.de" Ordner befinden.
 
-    src/piecrust/phpugl.de> ../_piecrust/chef bake -o /path/to/www
+    src/phpugl.de>bin/chef bake -o /path/to/www
 
     Optionen:
     -f    ...Seite wird vollständig "neugebacken"
     -o    ...Ausgabe-Pfad festlegen
-    -r    ...URL-Rewrite - Angabe der Site-Root-URL (Bsp. localhost/phpugl/www/)

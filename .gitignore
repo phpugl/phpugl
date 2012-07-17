@@ -3,3 +3,7 @@
 _cache/*
 _counter
 .idea
+
+vendor
+composer.phar
+
