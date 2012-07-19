@@ -1,6 +1,6 @@
 {% if post.tags %}
 <i class="icon-tags hide-text">Tags:</i>
-[ {% for tag in post.tags %} {% if tag != 'announcement' %}
+[ {% for tag in post.tags %} {% if tag not in ['announcement', 'last'] %}
 <a href="{{ pctagurl(tag) }}">{{ tag }}</a>{% if not loop.last %} | {% endif %}
 {% endif %}{% endfor %} ]
 {% endif %}
