@@ -1,7 +1,9 @@
 ---
 format: none
 layout: none
+content_type: xml
 posts_per_page: 10
+pretty_urls: false
 single_page: true
 posts_filters:
     not:
