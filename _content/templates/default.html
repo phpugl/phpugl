@@ -24,7 +24,7 @@
   
   <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="{{ site.root }}js/lib/html5shiv.js"></script>
   <![endif]-->
 
   <!-- CSS concatenated and minified via ant build script-->
@@ -72,6 +72,7 @@
           {% endblock %}
         </section>
         <aside class="span2">
+          <img src="{{ site.root }}img/phpugl.jpg" alt="PHPUGL" class="phpugl">
           <dl>
             <dt>Kalender</dt>
             <dd><a href="http://ical.phpugl.de" target="_blank"><img src="https://www.google.com/calendar/images/ical.gif" alt="ICAL" ></a> <a href="http://calendar.phpugl.de" target="_blank"><img src="https://www.google.com/calendar/images/html.gif" alt="HTML" ></a></dd>
