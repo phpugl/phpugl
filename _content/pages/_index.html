@@ -3,9 +3,8 @@ title: Home
 active: home
 keywords: Leipzig,PHP,symfony,Symfony2,doctrine,Doctrine2,LSDUG,HTML5
 format: none
-posts_filters:
+announcement_filters:
     has_tags: announcement
-    has_tags: last
     not:
         has_tags: draft
 ---
@@ -18,6 +17,6 @@ posts_filters:
   besten Voraussetzungen für die Entwicklung mit PHP.</p>
 </header>
 
-{% for post in pagination.posts %}
+{% for post in blog.posts.filter('announcement_filters') %}
 {% include 'home_post.html' %}
 {% endfor %}

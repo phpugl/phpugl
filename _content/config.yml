@@ -15,5 +15,6 @@ smartypants:
 
 baker:
     skip_patterns:
+        - /^bin/
         - /^vendor/
         - /^index.php/
