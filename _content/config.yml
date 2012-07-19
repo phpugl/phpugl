@@ -17,5 +17,5 @@ baker:
     skip_patterns:
         - /^bin/
         - /^vendor/
-        - /^composer/
+        - /^composer.*/
         - /^index.php/

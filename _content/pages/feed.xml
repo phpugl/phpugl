@@ -1,7 +1,6 @@
 ---
 format: none
 layout: none
-content_type: atom
 posts_per_page: 10
 single_page: true
 posts_filters:

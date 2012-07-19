@@ -336,6 +336,8 @@ FileETag None
   RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
 
   # Don't rewrite requests to stuff that physically exists.
+  RewriteRule ^feed.atom$ /feed.xml [R=301,L]
+  
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -l [OR]
   RewriteCond %{REQUEST_FILENAME} -d
