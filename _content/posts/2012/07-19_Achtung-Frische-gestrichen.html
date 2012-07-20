@@ -1,0 +1,51 @@
+---
+title: Achtung! Frisch gestrichen.
+author: Danilo Kühn
+time: 11:30:00
+active: blog
+tags: [piecrust]
+---
+
+Es tut sich was bei der PHPUGL. Die Webseite wurde renoviert, deshalb
+passt auf, es könnte noch ein paar nasse Stelle geben.
+
+Das [System] hinter der Webseite bleibt weiterhin das selbe. Nur die
+Art und Weise der Bearbeitung hat sich etwas geändert.
+
+<!-- more -->
+
+## Webseite bearbeiten
+
+    # Seite auschecken
+    git clone git@github.com:phpugl/phpugl.git
+    cd phpugl
+
+    # Composer installieren (http://getcomposer.org/)
+    curl -s http://getcomposer.org/installer | php
+
+    # Anhängigkeiten auflösen
+    composer.phar install
+
+## Post erstellen
+
+    bin/chef post --author="AUTOR NAME" --title="SEITEN TITEL"
+
+Der erstellte Post muss nur noch mit dem Editor der Wahl bearbeitet
+werden. Das Ergebnis kann man sich über die "index.php" als Live-Preview
+anschauen.
+
+## Cache-Problem?
+
+Sollte eine Exception im Browser zu sehen sein, dann leert einfach den Cache-Ordner.
+
+    sudo rm -fR _cache/*
+
+## Änderungen pushen
+
+    git add _content/posts/...
+    git commit -m "add posts about ..."
+    git push origin master
+
+Alle Änderungen im Master werden dann automatisch auf die Webseite übertragen.
+
+[System]: http://bolt80.com/piecrust
