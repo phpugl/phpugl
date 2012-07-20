@@ -9,5 +9,5 @@
 
   {{ post.content | raw }}
 	
-  {% if post.has_more %}<a href="{{post.url}}">mehr...</a>{% endif %}
+  {% if post.has_more %}<a class="btn" title="Zeige alles an" href="{{post.url}}">mehr...</a>{% endif %}
 </article>
