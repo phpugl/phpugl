@@ -1,3 +1,7 @@
 locations:
-    - url: /
+    - url: http://phpugl.de/
+    - url: http://phpugl.de/blog/
+      changefreq: weekly
+    - url: http://phpugl.de/projects/
+    - url: http://phpugl.de/aboutus/
       changefreq: monthly
