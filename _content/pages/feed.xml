@@ -18,7 +18,7 @@ posts_filters:
     <updated>{{ "now" | date('c') }}</updated>
     {% for post in pagination.posts %}
     <entry>
-       < title>{{ post.title }}</title>
+        <title>{{ post.title }}</title>
         <link href="{{ post.url }}" />
         <id>{{ post.uuid }}</id>
         <created>{{ post.timestamp | date('c') }}</created>
