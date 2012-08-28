@@ -4,8 +4,8 @@
         {
             "package": "bolt80/piecrust",
             "version": "dev-master",
-            "source-reference": "bc6b7c7a3e933dc51e7abc97c6b4089432b4a841",
-            "commit-date": "1342271790"
+            "source-reference": "b5c4cc98c9e807fae8dcca038164a29335b571c4",
+            "commit-date": "1346029226"
         },
         {
             "package": "geshi/geshi",

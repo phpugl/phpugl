@@ -12,17 +12,22 @@ posts_filters:
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>PHPUGL</title>
-    <link href="{{ site.root }}feed.atom" rel="self" />
+    <link href="{{ site.root }}feed.xml" rel="self" />
     <link href="{{ site.root }}" />
     <id>urn:uuid:60a76c80-d399-11d9-b91C-0003939e0af6</id>
     <updated>{{ "now" | date('c') }}</updated>
     {% for post in pagination.posts %}
-        <entry>
-            <title>{{ post.title }}</title>
-            <link href="{{ post.url }}" />
-            <id>{{ post.uuid }}</id>
-            <updated>{{ post.timestamp | date('c') }}</updated>
-            <summary type="html"><![CDATA[{{ post.content | raw }}]]></summary>
-        </entry>
+    <entry>
+       < title>{{ post.title }}</title>
+        <link href="{{ post.url }}" />
+        <id>{{ post.uuid }}</id>
+        <created>{{ post.timestamp | date('c') }}</created>
+        {% if post.updated %}
+        <updated>{{ post.updated | date('c') }}</updated>
+        {% else %}
+        <updated>{{ post.timestamp | date('c') }}</updated>
+        {% endif %}
+        <summary type="html"><![CDATA[{{ post.content | raw }}]]></summary>
+    </entry>
     {% endfor %}
 </feed>
