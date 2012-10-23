@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>{% if page.title %}{{ page.title }} - {% endif %} PHPUGL - PHP UserGroup Leipzig</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- MetaTags -- begin -->
   <meta name="DC.title" content="PHPUGL">
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
@@ -21,7 +21,7 @@
   <meta name="DC.date" content="{% if page.timestamp %}{{ page.timestamp | date('c') }}{% else %}{{ 'now'|date('c') }}{% endif %}">
   <meta name="robots" content="index,follow">
   <!-- MetaTags -- end -->
-  
+
   <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
     <script src="{{ site.root }}js/lib/html5shiv.js"></script>
@@ -31,11 +31,11 @@
   <link rel="stylesheet" href="{{ site.root }}css/bootstrap.min.css">
   <link rel="stylesheet" href="{{ site.root }}css/bootstrap-responsive.min.css">
   <link rel="stylesheet" href="{{ site.root }}css/style.css">
-  
+
   <link href="{{ site.root }}feed.xml" type="application/atom+xml" rel="alternate" title="PHPUGL" >
   <link rel="author" href="humans.txt" />
 </head>
-<body>  
+<body>
   <div class="container">
     <header>
       <div id="logo" role="logo">/**
@@ -101,11 +101,10 @@
     </footer>
   </div> <!--! end of #container -->
   <script src="{{ site.root }}js/lib/jquery.min.js"></script>
-  <script src="{{ site.root }}js/lib/bootstrap.min.js"></script>
   {% block javascript %}
   {{ javascript|raw }}
   {% endblock %}
-  
+
   <!-- Piwik -->
   <script type="text/javascript">
   var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.phpugl.de/" : "http://stats.phpugl.de/");
