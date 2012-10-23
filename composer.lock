@@ -4,8 +4,12 @@
         {
             "package": "bolt80/piecrust",
             "version": "dev-master",
-            "source-reference": "b5c4cc98c9e807fae8dcca038164a29335b571c4",
-            "commit-date": "1346029226"
+            "source-reference": "9cc23bbd260b85a0584e08d293c857a505a88d35",
+            "commit-date": "1350282285"
+        },
+        {
+            "package": "bolt80/stupidhttp",
+            "version": "v0.2.0"
         },
         {
             "package": "geshi/geshi",
@@ -22,6 +26,10 @@
         {
             "package": "markdown/markdown-extra",
             "version": "1.0"
+        },
+        {
+            "package": "mikey179/vfsStream",
+            "version": "v1.1.0"
         },
         {
             "package": "mustache/mustache",
