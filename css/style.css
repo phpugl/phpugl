@@ -51,20 +51,15 @@ p { margin-bottom: 14px; }
 }
 
 .navbar .nav > li > a {
-/*    color: #777;
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 1;
-    margin: 0;
-    padding: 8px 10px 12px;*/
+    padding: 13px 15px;
     text-shadow: none;
 }
 
 .navbar .nav > li > a:hover {
     color: #000;
     background-color: transparent;
-    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05) outset; 
-    -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05) outset; 
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05) outset;
+    -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05) outset;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05) outset;
 }
 
@@ -72,8 +67,8 @@ p { margin-bottom: 14px; }
 .navbar .nav .active > a:hover {
     color: #000;
     background-color: transparent;
-    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05) inset; 
-    -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05) inset; 
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05) inset;
+    -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05) inset;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05) inset;
     font-weight: bold;
     padding-left: 13px;
@@ -106,8 +101,8 @@ p { margin-bottom: 14px; }
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset; 
-    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset; 
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
     margin-right: 20px;
     min-height: 55px;
@@ -128,8 +123,8 @@ p { margin-bottom: 14px; }
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset; 
-    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset; 
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
     max-height: 60px;
     max-width: 60px;
@@ -172,11 +167,11 @@ aside .phpugl {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset; 
-    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset; 
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
     max-width: 170px;
-    opacity: .5; 
+    opacity: .5;
     filter:alpha(opacity=50)
 }
 
