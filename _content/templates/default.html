@@ -29,7 +29,6 @@
 
   <!-- CSS concatenated and minified via ant build script-->
   <link rel="stylesheet" href="{{ site.root }}css/bootstrap.min.css">
-  <link rel="stylesheet" href="{{ site.root }}css/bootstrap-responsive.min.css">
   <link rel="stylesheet" href="{{ site.root }}css/style.css">
 
   <link href="{{ site.root }}feed.xml" type="application/atom+xml" rel="alternate" title="PHPUGL" >
@@ -101,6 +100,7 @@
     </footer>
   </div> <!--! end of #container -->
   <script src="{{ site.root }}js/lib/jquery.min.js"></script>
+  <script src="{{ site.root }}js/lib/bootstrap.min.js"></script>
   {% block javascript %}
   {{ javascript|raw }}
   {% endblock %}
