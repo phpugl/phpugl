@@ -2,58 +2,344 @@
     "hash": "e9fe41f0d34d469e441114ce621d7e1e",
     "packages": [
         {
-            "package": "bolt80/piecrust",
+            "name": "bolt80/piecrust",
             "version": "dev-master",
-            "source-reference": "9cc23bbd260b85a0584e08d293c857a505a88d35",
-            "commit-date": "1350282285"
+            "source": {
+                "type": "git",
+                "url": "http://github.com/ludovicchabant/PieCrust",
+                "reference": "c943e2374227d50207fd514c1d797b9f4df0a45f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/ludovicchabant/PieCrust/archive/c943e2374227d50207fd514c1d797b9f4df0a45f.zip",
+                "reference": "c943e2374227d50207fd514c1d797b9f4df0a45f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 5.3.0",
+                "symfony/yaml": "v2.0.14",
+                "twig/twig": "v1.8.1",
+                "mustache/mustache": "1.*",
+                "geshi/geshi": "1.0.*",
+                "lessphp/lessphp": "0.3.*",
+                "markdown/markdown": "1.0",
+                "markdown/markdown-extra": "1.0",
+                "smartypants/smartypants": "1.0",
+                "smartypants/smartypants-typographer": "1.0",
+                "textile/textile": "2.*",
+                "bolt80/stupidhttp": "v0.2.0",
+                "mikey179/vfsstream": "v1.1.0"
+            },
+            "time": "2012-11-17 07:32:23",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "PieCrust": [
+                        "src/",
+                        "tests/src/"
+                    ],
+                    "Log": "libs/pear",
+                    "Console": "libs/pear",
+                    "Benchmark_": "libs/pear"
+                }
+            },
+            "include-path": [
+                "libs/pear"
+            ],
+            "authors": [
+                {
+                    "name": "Ludovic Chabant",
+                    "homepage": "http://ludovic.chabant.com"
+                }
+            ],
+            "description": "A lightweight CMS and static website generator.",
+            "homepage": "http://bolt80.com/piecrust",
+            "support": {
+                "source": "https://github.com/ludovicchabant/PieCrust/tree/master",
+                "issues": "https://github.com/ludovicchabant/PieCrust/issues"
+            }
         },
         {
-            "package": "bolt80/stupidhttp",
-            "version": "v0.2.0"
+            "name": "bolt80/stupidhttp",
+            "version": "v0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ludovicchabant/StupidHttp",
+                "reference": "v0.2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/ludovicchabant/StupidHttp/zipball/v0.2.0",
+                "reference": "v0.2.0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 5.3.0"
+            },
+            "time": "2012-05-31 13:28:25",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "StupidHttp_": "lib"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Ludovic Chabant",
+                    "homepage": "http://ludovic.chabant.com"
+                }
+            ],
+            "description": "A stupid and simple development HTTP server.",
+            "homepage": "http://bolt80.com/stupidhttp",
+            "keywords": [
+                "http",
+                "web",
+                "server",
+                "net"
+            ]
         },
         {
-            "package": "geshi/geshi",
-            "version": "1.0.8.10"
+            "name": "geshi/geshi",
+            "version": "1.0.8.10",
+            "dist": {
+                "type": "zip",
+                "url": "http://sourceforge.net/projects/geshi/files/geshi/GeSHi%201.0.8.10/GeSHi-1.0.8.10.zip/download",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "geshi.php"
+                ]
+            }
         },
         {
-            "package": "lessphp/lessphp",
-            "version": "0.3.4"
+            "name": "lessphp/lessphp",
+            "version": "0.3.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/leafo/lessphp/zipball/v0.3.4-2",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "lessc.inc.php"
+                ]
+            }
         },
         {
-            "package": "markdown/markdown",
-            "version": "1.0"
+            "name": "markdown/markdown",
+            "version": "1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/michelf/php-markdown/zipball/master",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "installation-source": "dist"
         },
         {
-            "package": "markdown/markdown-extra",
-            "version": "1.0"
+            "name": "markdown/markdown-extra",
+            "version": "1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/michelf/php-markdown/zipball/extra",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "installation-source": "dist"
         },
         {
-            "package": "mikey179/vfsStream",
-            "version": "v1.1.0"
+            "name": "mikey179/vfsStream",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikey179/vfsStream",
+                "reference": "v1.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/mikey179/vfsStream/zipball/v1.1.0",
+                "reference": "v1.1.0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2012-08-25 05:49:29",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "org\\bovigo\\vfs": "src/main/php"
+                }
+            },
+            "license": [
+                "BSD"
+            ],
+            "homepage": "http://vfs.bovigo.org/"
         },
         {
-            "package": "mustache/mustache",
-            "version": "1.1.0"
+            "name": "mustache/mustache",
+            "version": "1.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/bobthecow/mustache.php/zipball/v1.1.0",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "Mustache.php",
+                    "MustacheLoader.php"
+                ]
+            }
         },
         {
-            "package": "smartypants/smartypants",
-            "version": "1.0"
+            "name": "smartypants/smartypants",
+            "version": "1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/michelf/php-smartypants/zipball/master",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "installation-source": "dist"
         },
         {
-            "package": "smartypants/smartypants-typographer",
-            "version": "1.0"
+            "name": "smartypants/smartypants-typographer",
+            "version": "1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/michelf/php-smartypants/zipball/typo",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "installation-source": "dist"
         },
         {
-            "package": "symfony/yaml",
-            "version": "v2.0.14"
+            "name": "symfony/yaml",
+            "version": "v2.0.14",
+            "target-dir": "Symfony/Component/Yaml",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Yaml",
+                "reference": "v2.0.14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/symfony/Yaml/zipball/v2.0.14",
+                "reference": "v2.0.14",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "time": "2012-05-15 09:56:32",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Yaml": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "http://symfony.com"
         },
         {
-            "package": "textile/textile",
-            "version": "2.0.0"
+            "name": "textile/textile",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "http://textile.thresholdstate.com/file_download/1/textile-2.0.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "classTextile.php"
+                ]
+            }
         },
         {
-            "package": "twig/twig",
-            "version": "v1.8.1"
+            "name": "twig/twig",
+            "version": "v1.8.1",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/fabpot/Twig.git",
+                "reference": "v1.8.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/fabpot/Twig/zipball/v1.8.1",
+                "reference": "v1.8.1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "time": "2012-05-17 09:02:47",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.8-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "license": [
+                "BSD-3"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ]
         }
     ],
     "packages-dev": null,
