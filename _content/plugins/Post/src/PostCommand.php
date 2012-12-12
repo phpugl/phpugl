@@ -13,10 +13,18 @@ class PostCommand extends ChefCommand
     {
         return 'post';
     }
-    
+
     public function setupParser(Console_CommandLine $parser, IPieCrust $pieCrust)
     {
         $parser->description = 'Create a new post for blog.';
+        $parser->addOption('vim', array(
+            'short_name' => '-e',
+            'long_name' => '--vim',
+            'action' => 'StoreTrue',
+            'description' => "Use vim to edit post",
+            'default' => false,
+            'help_name' => 'VIM',
+        ));
         $parser->addOption('author', array(
             'short_name' => '-a',
             'long_name' => '--author',
@@ -49,61 +57,66 @@ class PostCommand extends ChefCommand
             'help_name' => 'TAGLIST',
         ));
     }
-    
+
     public function run(ChefContext $context)
     {
         $logger = $context->getLog();
         $pieCrust = $context->getApp();
         $result = $context->getResult();
-                
+
         $timestamp = time();
-        
+
         if ($result->command->options['title'] === NULL) {
           throw new Exception('Give a title to post');
         }
-        
+
         $title = join(' ', $result->command->options['title']);
         $yamlFormatter = array(
           'title' => $title
         );
-                
+
         if ($result->command->options['author']) {
           $yamlFormatter['author'] = join(' ', $result->command->options['author']);
         }
-          
+
         if ($result->command->options['date']) {
           $timestamp = strtotime(join(' ', $result->command->options['date']));
         }
         $yamlFormatter['time'] = date('H:i:s', $timestamp);
-             
+
         if ($result->command->options['tags']) {
           $yamlFormatter['tags'] = '[' . join(', ', $result->command->options['tags']) . ']';
         }
-        
+
         $yamlFormatter['active'] = 'blog';
-        
+
         $content = "---\n";
         foreach ($yamlFormatter as $k => $v) {
           $content .= sprintf("%s: %s\n", $k, $v);
         }
         $content .= "---\n\nPUT HERE YOUR CONTENT";
-        
-        $filename = sprintf("%s-%s_%s.html", 
+
+        $filename = sprintf("%s-%s_%s.html",
           date('m', $timestamp),
           date('d', $timestamp),
           $this->slugify($title)
         );
-        
+
         $path = $pieCrust->getPostsDir() . date('Y', $timestamp) . DIRECTORY_SEPARATOR;
-        
+
         if (!file_exists($path)) {
           mkdir($path);
         }
-        
+
         file_put_contents($path . $filename, $content);
         $logger->info(sprintf("New post created at [%s]", $path . $filename));
+
+
+        if ($result->command->options['vim']) {
+            system('vim ' . $path . $filename . ' > `tty`');
+        }
     }
-    
+
     /**
      * Modifies a string to remove all non ASCII characters and spaces.
      */
@@ -111,27 +124,27 @@ class PostCommand extends ChefCommand
     {
         // replace non letter or digits by -
         $text = preg_replace('~[^\\pL\d]+~u', '-', $text);
-     
+
         // trim
         $text = trim($text, '-');
-     
+
         // transliterate
         if (function_exists('iconv'))
         {
             $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
         }
-     
+
         // lowercase
         //$text = strtolower($text);
-     
+
         // remove unwanted characters
         $text = preg_replace('~[^-\w]+~', '', $text);
-     
+
         if (empty($text))
         {
             return 'n-a';
         }
-     
+
         return $text;
     }
 }
