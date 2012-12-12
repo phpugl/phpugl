@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ludovicchabant/PieCrust",
-                "reference": "c943e2374227d50207fd514c1d797b9f4df0a45f"
+                "reference": "984e7af2ab183a353d0d9082b522707c019aff47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/ludovicchabant/PieCrust/archive/c943e2374227d50207fd514c1d797b9f4df0a45f.zip",
-                "reference": "c943e2374227d50207fd514c1d797b9f4df0a45f",
+                "url": "https://api.github.com/repos/ludovicchabant/PieCrust/zipball/984e7af2ab183a353d0d9082b522707c019aff47",
+                "reference": "984e7af2ab183a353d0d9082b522707c019aff47",
                 "shasum": ""
             },
             "require": {
@@ -30,7 +30,7 @@
                 "bolt80/stupidhttp": "v0.2.0",
                 "mikey179/vfsstream": "v1.1.0"
             },
-            "time": "2012-11-17 07:32:23",
+            "time": "2012-12-04 05:19:12",
             "type": "library",
             "installation-source": "source",
             "autoload": {
