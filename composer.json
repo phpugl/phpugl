@@ -9,7 +9,7 @@
     ],
     "require": {
         "php": ">= 5.3.0",
-        "bolt80/piecrust": "dev-master"
+        "bolt80/piecrust": "dev-master#5ce8882896466698ecf755a775030cb772ba0964"
     },
     "config": {
       "bin-dir": "bin"

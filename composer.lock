@@ -1,5 +1,5 @@
 {
-    "hash": "e9fe41f0d34d469e441114ce621d7e1e",
+    "hash": "763dc3a1580014012a8055d8c1060c27",
     "packages": [
         {
             "name": "bolt80/piecrust",
@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ludovicchabant/PieCrust.git",
-                "reference": "82efb6ec7a7d239b7d6c2db939c49c096d410773"
+                "reference": "5ce8882896466698ecf755a775030cb772ba0964"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/ludovicchabant/PieCrust/zipball/82efb6ec7a7d239b7d6c2db939c49c096d410773",
-                "reference": "82efb6ec7a7d239b7d6c2db939c49c096d410773",
+                "reference": "5ce8882896466698ecf755a775030cb772ba0964",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +57,7 @@
                 "source": "https://github.com/ludovicchabant/PieCrust/tree/master",
                 "issues": "https://github.com/ludovicchabant/PieCrust/issues"
             },
-            "time": "2013-02-18 21:29:33"
+            "time": "2013-02-05 06:24:59"
         },
         {
             "name": "bolt80/stupidhttp",
