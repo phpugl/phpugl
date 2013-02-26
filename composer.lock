@@ -6,33 +6,31 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "http://github.com/ludovicchabant/PieCrust",
-                "reference": "984e7af2ab183a353d0d9082b522707c019aff47"
+                "url": "https://github.com/ludovicchabant/PieCrust.git",
+                "reference": "82efb6ec7a7d239b7d6c2db939c49c096d410773"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ludovicchabant/PieCrust/zipball/984e7af2ab183a353d0d9082b522707c019aff47",
-                "reference": "984e7af2ab183a353d0d9082b522707c019aff47",
+                "url": "https://api.github.com/repos/ludovicchabant/PieCrust/zipball/82efb6ec7a7d239b7d6c2db939c49c096d410773",
+                "reference": "82efb6ec7a7d239b7d6c2db939c49c096d410773",
                 "shasum": ""
             },
             "require": {
-                "php": ">= 5.3.0",
-                "symfony/yaml": "v2.0.14",
-                "twig/twig": "v1.8.1",
-                "mustache/mustache": "1.*",
+                "bolt80/stupidhttp": "v0.2.0",
                 "geshi/geshi": "1.0.*",
                 "lessphp/lessphp": "0.3.*",
                 "markdown/markdown": "1.0",
                 "markdown/markdown-extra": "1.0",
+                "mikey179/vfsstream": "v1.1.0",
+                "mustache/mustache": "1.*",
+                "php": ">= 5.3.0",
                 "smartypants/smartypants": "1.0",
                 "smartypants/smartypants-typographer": "1.0",
+                "symfony/yaml": "v2.0.14",
                 "textile/textile": "2.*",
-                "bolt80/stupidhttp": "v0.2.0",
-                "mikey179/vfsstream": "v1.1.0"
+                "twig/twig": "v1.8.1"
             },
-            "time": "2012-12-04 05:19:12",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "PieCrust": [
@@ -58,7 +56,8 @@
             "support": {
                 "source": "https://github.com/ludovicchabant/PieCrust/tree/master",
                 "issues": "https://github.com/ludovicchabant/PieCrust/issues"
-            }
+            },
+            "time": "2013-02-18 21:29:33"
         },
         {
             "name": "bolt80/stupidhttp",
@@ -77,9 +76,7 @@
             "require": {
                 "php": ">= 5.3.0"
             },
-            "time": "2012-05-31 13:28:25",
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "StupidHttp_": "lib"
@@ -98,10 +95,11 @@
             "homepage": "http://bolt80.com/stupidhttp",
             "keywords": [
                 "http",
-                "web",
+                "net",
                 "server",
-                "net"
-            ]
+                "web"
+            ],
+            "time": "2012-05-31 13:28:25"
         },
         {
             "name": "geshi/geshi",
@@ -113,7 +111,6 @@
                 "shasum": null
             },
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "classmap": [
                     "geshi.php"
@@ -130,7 +127,6 @@
                 "shasum": null
             },
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "classmap": [
                     "lessc.inc.php"
@@ -146,8 +142,7 @@
                 "reference": null,
                 "shasum": null
             },
-            "type": "library",
-            "installation-source": "dist"
+            "type": "library"
         },
         {
             "name": "markdown/markdown-extra",
@@ -158,8 +153,7 @@
                 "reference": null,
                 "shasum": null
             },
-            "type": "library",
-            "installation-source": "dist"
+            "type": "library"
         },
         {
             "name": "mikey179/vfsStream",
@@ -178,9 +172,7 @@
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "2012-08-25 05:49:29",
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "org\\bovigo\\vfs": "src/main/php"
@@ -189,7 +181,8 @@
             "license": [
                 "BSD"
             ],
-            "homepage": "http://vfs.bovigo.org/"
+            "homepage": "http://vfs.bovigo.org/",
+            "time": "2012-08-25 05:49:29"
         },
         {
             "name": "mustache/mustache",
@@ -201,7 +194,6 @@
                 "shasum": null
             },
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "classmap": [
                     "Mustache.php",
@@ -218,8 +210,7 @@
                 "reference": null,
                 "shasum": null
             },
-            "type": "library",
-            "installation-source": "dist"
+            "type": "library"
         },
         {
             "name": "smartypants/smartypants-typographer",
@@ -230,8 +221,7 @@
                 "reference": null,
                 "shasum": null
             },
-            "type": "library",
-            "installation-source": "dist"
+            "type": "library"
         },
         {
             "name": "symfony/yaml",
@@ -251,9 +241,7 @@
             "require": {
                 "php": ">=5.3.2"
             },
-            "time": "2012-05-15 09:56:32",
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\Yaml": ""
@@ -273,7 +261,8 @@
                 }
             ],
             "description": "Symfony Yaml Component",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "2012-05-15 09:56:32"
         },
         {
             "name": "textile/textile",
@@ -285,7 +274,6 @@
                 "shasum": null
             },
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "classmap": [
                     "classTextile.php"
@@ -309,14 +297,12 @@
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "2012-05-17 09:02:47",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.8-dev"
                 }
             },
-            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Twig_": "lib/"
@@ -339,7 +325,8 @@
             "homepage": "http://twig.sensiolabs.org",
             "keywords": [
                 "templating"
-            ]
+            ],
+            "time": "2012-05-17 09:02:47"
         }
     ],
     "packages-dev": null,
