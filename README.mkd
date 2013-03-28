@@ -47,7 +47,7 @@ Um einen neuen Post zu erstellen gibt es jetzt die Möglichkeit die Commandline 
 
 ## Seite bauen lassen
 
-Der Inhalt wird mit PieCrust in der Console erstellt. Dafür muss der folgende Befehl ausgeführt werden. Ihr solltest euch im "phpugl.de" Ordner befinden.
+Der Inhalt wird mit PieCrust in der Console erstellt. Dafür muss der folgende Befehl ausgeführt werden. Ihr solltet euch im "phpugl.de" Ordner befinden.
 
     src/phpugl.de>bin/chef bake -o /path/to/www
 
