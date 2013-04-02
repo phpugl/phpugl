@@ -83,6 +83,7 @@ class PostCommand extends ChefCommand
           $timestamp = strtotime(join(' ', $result->command->options['date']));
         }
         $yamlFormatter['time'] = date('H:i:s', $timestamp);
+        $yamlFormatter['updated'] = date('Y-m-d H:i:s', $timestamp);
 
         if ($result->command->options['tags']) {
           $yamlFormatter['tags'] = '[' . join(', ', $result->command->options['tags']) . ']';
