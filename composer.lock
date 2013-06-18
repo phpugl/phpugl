@@ -1,5 +1,9 @@
 {
-    "hash": "763dc3a1580014012a8055d8c1060c27",
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "35c0f4844398ec842d1e9ee66a117203",
     "packages": [
         {
             "name": "bolt80/piecrust",
@@ -7,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ludovicchabant/PieCrust.git",
-                "reference": "5ce8882896466698ecf755a775030cb772ba0964"
+                "reference": "ef08d352bb9be53a3c9e7fb8c5da40b5abdf2f5b"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/ludovicchabant/PieCrust/zipball/82efb6ec7a7d239b7d6c2db939c49c096d410773",
-                "reference": "5ce8882896466698ecf755a775030cb772ba0964",
+                "reference": "ef08d352bb9be53a3c9e7fb8c5da40b5abdf2f5b",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +61,7 @@
                 "source": "https://github.com/ludovicchabant/PieCrust/tree/master",
                 "issues": "https://github.com/ludovicchabant/PieCrust/issues"
             },
-            "time": "2013-02-05 06:24:59"
+            "time": "2013-06-14 05:01:21"
         },
         {
             "name": "bolt80/stupidhttp",
@@ -103,10 +107,10 @@
         },
         {
             "name": "geshi/geshi",
-            "version": "1.0.8.10",
+            "version": "1.0.8.11",
             "dist": {
                 "type": "zip",
-                "url": "http://sourceforge.net/projects/geshi/files/geshi/GeSHi%201.0.8.10/GeSHi-1.0.8.10.zip/download",
+                "url": "http://sourceforge.net/projects/geshi/files/geshi/GeSHi%201.0.8.11/GeSHi-1.0.8.11.zip/download",
                 "reference": null,
                 "shasum": null
             },
@@ -329,12 +333,20 @@
             "time": "2012-05-17 09:02:47"
         }
     ],
-    "packages-dev": null,
+    "packages-dev": [
+
+    ],
     "aliases": [
 
     ],
     "minimum-stability": "dev",
     "stability-flags": {
         "bolt80/piecrust": 20
-    }
+    },
+    "platform": {
+        "php": ">= 5.3.0"
+    },
+    "platform-dev": [
+
+    ]
 }
