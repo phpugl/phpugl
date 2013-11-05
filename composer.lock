@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "35c0f4844398ec842d1e9ee66a117203",
+    "hash": "fa2ab443f0f4bc4c932fb2cda65437b9",
     "packages": [
         {
             "name": "bolt80/piecrust",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ludovicchabant/PieCrust.git",
-                "reference": "ef08d352bb9be53a3c9e7fb8c5da40b5abdf2f5b"
+                "reference": "5c101a9215771772b7d22be767f221204542d890"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/ludovicchabant/PieCrust/zipball/82efb6ec7a7d239b7d6c2db939c49c096d410773",
-                "reference": "ef08d352bb9be53a3c9e7fb8c5da40b5abdf2f5b",
+                "reference": "5c101a9215771772b7d22be767f221204542d890",
                 "shasum": ""
             },
             "require": {
@@ -61,7 +61,7 @@
                 "source": "https://github.com/ludovicchabant/PieCrust/tree/master",
                 "issues": "https://github.com/ludovicchabant/PieCrust/issues"
             },
-            "time": "2013-06-14 05:01:21"
+            "time": "2013-10-31 22:40:27"
         },
         {
             "name": "bolt80/stupidhttp",
