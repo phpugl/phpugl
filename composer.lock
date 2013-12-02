@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "fa2ab443f0f4bc4c932fb2cda65437b9",
+    "hash": "a5913835be0f8a777a33055773bc0dd4",
     "packages": [
         {
             "name": "bolt80/piecrust",
@@ -11,28 +11,27 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ludovicchabant/PieCrust.git",
-                "reference": "5c101a9215771772b7d22be767f221204542d890"
+                "reference": "ec8f293a7d3c4e6ee85f5acf185df1d2d6fae0a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ludovicchabant/PieCrust/zipball/82efb6ec7a7d239b7d6c2db939c49c096d410773",
-                "reference": "5c101a9215771772b7d22be767f221204542d890",
+                "url": "https://api.github.com/repos/ludovicchabant/PieCrust/zipball/ec8f293a7d3c4e6ee85f5acf185df1d2d6fae0a7",
+                "reference": "ec8f293a7d3c4e6ee85f5acf185df1d2d6fae0a7",
                 "shasum": ""
             },
             "require": {
                 "bolt80/stupidhttp": "v0.2.0",
                 "geshi/geshi": "1.0.*",
-                "lessphp/lessphp": "0.3.*",
-                "markdown/markdown": "1.0",
-                "markdown/markdown-extra": "1.0",
+                "leafo/lessphp": "0.3.*",
+                "michelf/php-markdown": "1.3",
                 "mikey179/vfsstream": "v1.1.0",
-                "mustache/mustache": "1.*",
+                "mustache/mustache": "v2.1.0",
+                "netcarver/textile": "v3.5.1",
                 "php": ">= 5.3.0",
-                "smartypants/smartypants": "1.0",
-                "smartypants/smartypants-typographer": "1.0",
-                "symfony/yaml": "v2.0.14",
-                "textile/textile": "2.*",
-                "twig/twig": "v1.8.1"
+                "smartypants/smartypants": "1.5.1",
+                "smartypants/smartypants-typographer": "1.0.1",
+                "symfony/yaml": "v2.2.0",
+                "twig/twig": "v1.12.2"
             },
             "type": "library",
             "autoload": {
@@ -61,20 +60,20 @@
                 "source": "https://github.com/ludovicchabant/PieCrust/tree/master",
                 "issues": "https://github.com/ludovicchabant/PieCrust/issues"
             },
-            "time": "2013-10-31 22:40:27"
+            "time": "2013-11-01 01:47:09"
         },
         {
             "name": "bolt80/stupidhttp",
             "version": "v0.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ludovicchabant/StupidHttp",
-                "reference": "v0.2.0"
+                "url": "https://github.com/ludovicchabant/StupidHttp.git",
+                "reference": "5bee4ddd2162f860721884450586e25cb48950d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/ludovicchabant/StupidHttp/zipball/v0.2.0",
-                "reference": "v0.2.0",
+                "url": "https://api.github.com/repos/ludovicchabant/StupidHttp/zipball/5bee4ddd2162f860721884450586e25cb48950d1",
+                "reference": "5bee4ddd2162f860721884450586e25cb48950d1",
                 "shasum": ""
             },
             "require": {
@@ -86,6 +85,7 @@
                     "StupidHttp_": "lib"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
             ],
@@ -103,7 +103,7 @@
                 "server",
                 "web"
             ],
-            "time": "2012-05-31 13:28:25"
+            "time": "2012-05-31 20:28:25"
         },
         {
             "name": "geshi/geshi",
@@ -122,55 +122,109 @@
             }
         },
         {
-            "name": "lessphp/lessphp",
-            "version": "0.3.4",
+            "name": "leafo/lessphp",
+            "version": "v0.3.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leafo/lessphp.git",
+                "reference": "a11a6141b5715162b933c405379765d817891c5d"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/leafo/lessphp/zipball/v0.3.4-2",
-                "reference": null,
-                "shasum": null
+                "url": "https://api.github.com/repos/leafo/lessphp/zipball/a11a6141b5715162b933c405379765d817891c5d",
+                "reference": "a11a6141b5715162b933c405379765d817891c5d",
+                "shasum": ""
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "lessc.inc.php"
                 ]
-            }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Leaf Corcoran",
+                    "email": "leafot@gmail.com",
+                    "homepage": "http://leafo.net"
+                }
+            ],
+            "description": "lessphp is a compiler for LESS written in PHP.",
+            "homepage": "http://leafo.net/lessphp/",
+            "time": "2013-03-02 16:13:31"
         },
         {
-            "name": "markdown/markdown",
-            "version": "1.0",
+            "name": "michelf/php-markdown",
+            "version": "1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/michelf/php-markdown.git",
+                "reference": "fcdd3e0781ae40c2b9847874e0755ff4f5559688"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/michelf/php-markdown/zipball/master",
-                "reference": null,
-                "shasum": null
+                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/fcdd3e0781ae40c2b9847874e0755ff4f5559688",
+                "reference": "fcdd3e0781ae40c2b9847874e0755ff4f5559688",
+                "shasum": ""
             },
-            "type": "library"
-        },
-        {
-            "name": "markdown/markdown-extra",
-            "version": "1.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/michelf/php-markdown/zipball/extra",
-                "reference": null,
-                "shasum": null
+            "require": {
+                "php": ">=5.3.0"
             },
-            "type": "library"
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-lib": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Michelf": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Michel Fortin",
+                    "email": "michel.fortin@michelf.ca",
+                    "homepage": "http://michelf.ca/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "John Gruber",
+                    "homepage": "http://daringfireball.net/"
+                }
+            ],
+            "description": "PHP Markdown",
+            "homepage": "http://michelf.ca/projects/php-markdown/",
+            "keywords": [
+                "markdown"
+            ],
+            "time": "2013-04-11 18:53:11"
         },
         {
             "name": "mikey179/vfsStream",
             "version": "v1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mikey179/vfsStream",
-                "reference": "v1.1.0"
+                "url": "https://github.com/mikey179/vfsStream.git",
+                "reference": "fc0fe8f4d0b527254a2dc45f0c265567c881d07e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/mikey179/vfsStream/zipball/v1.1.0",
-                "reference": "v1.1.0",
+                "url": "https://api.github.com/repos/mikey179/vfsStream/zipball/fc0fe8f4d0b527254a2dc45f0c265567c881d07e",
+                "reference": "fc0fe8f4d0b527254a2dc45f0c265567c881d07e",
                 "shasum": ""
             },
             "require": {
@@ -182,35 +236,97 @@
                     "org\\bovigo\\vfs": "src/main/php"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD"
             ],
             "homepage": "http://vfs.bovigo.org/",
-            "time": "2012-08-25 05:49:29"
+            "time": "2012-08-25 12:49:29"
         },
         {
             "name": "mustache/mustache",
-            "version": "1.1.0",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bobthecow/mustache.php.git",
+                "reference": "6ac9cf03e47a0ca38257ef0aca765d0733f3c62c"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/bobthecow/mustache.php/zipball/v1.1.0",
-                "reference": null,
-                "shasum": null
+                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/6ac9cf03e47a0ca38257ef0aca765d0733f3c62c",
+                "reference": "6ac9cf03e47a0ca38257ef0aca765d0733f3c62c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
             },
             "type": "library",
             "autoload": {
-                "classmap": [
-                    "Mustache.php",
-                    "MustacheLoader.php"
-                ]
-            }
+                "psr-0": {
+                    "Mustache": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Hileman",
+                    "email": "justin@justinhileman.info",
+                    "homepage": "http://justinhileman.com"
+                }
+            ],
+            "description": "A Mustache implementation in PHP.",
+            "homepage": "https://github.com/bobthecow/mustache.php",
+            "keywords": [
+                "mustache",
+                "templating"
+            ],
+            "time": "2013-01-12 07:18:03"
+        },
+        {
+            "name": "netcarver/textile",
+            "version": "v3.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/textile/php-textile.git",
+                "reference": "a8280ff782e449ce32ea3f416a99148b61e3343e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/textile/php-textile/zipball/a8280ff782e449ce32ea3f416a99148b61e3343e",
+                "reference": "a8280ff782e449ce32ea3f416a99148b61e3343e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Netcarver\\Textile": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "A lightweight markup language that takes (almost) plaintext and converts it into well formed HTML.",
+            "homepage": "https://github.com/netcarver/textile",
+            "time": "2013-01-01 17:29:35"
         },
         {
             "name": "smartypants/smartypants",
-            "version": "1.0",
+            "version": "1.5.1",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/michelf/php-smartypants/zipball/master",
+                "url": "https://github.com/michelf/php-smartypants/archive/v1.5.1f.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -218,10 +334,10 @@
         },
         {
             "name": "smartypants/smartypants-typographer",
-            "version": "1.0",
+            "version": "1.0.1",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/michelf/php-smartypants/zipball/typo",
+                "url": "https://github.com/michelf/php-smartypants/archive/t1.0.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -229,28 +345,34 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.0.14",
+            "version": "v2.2.0",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Yaml",
-                "reference": "v2.0.14"
+                "url": "https://github.com/symfony/Yaml.git",
+                "reference": "b293027f4030998a752a1ac06e80ae9e6bf6a763"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Yaml/zipball/v2.0.14",
-                "reference": "v2.0.14",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/b293027f4030998a752a1ac06e80ae9e6bf6a763",
+                "reference": "b293027f4030998a752a1ac06e80ae9e6bf6a763",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2"
+                "php": ">=5.3.3"
             },
             "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Yaml": ""
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
                 }
             },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Yaml\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -266,36 +388,20 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2012-05-15 09:56:32"
-        },
-        {
-            "name": "textile/textile",
-            "version": "2.0.0",
-            "dist": {
-                "type": "zip",
-                "url": "http://textile.thresholdstate.com/file_download/1/textile-2.0.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "classTextile.php"
-                ]
-            }
+            "time": "2013-01-27 16:49:19"
         },
         {
             "name": "twig/twig",
-            "version": "v1.8.1",
+            "version": "v1.12.2",
             "source": {
                 "type": "git",
-                "url": "git://github.com/fabpot/Twig.git",
-                "reference": "v1.8.1"
+                "url": "https://github.com/fabpot/Twig.git",
+                "reference": "a56f7405be86b900405d09b00fac2d73b6bdf85f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Twig/zipball/v1.8.1",
-                "reference": "v1.8.1",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/a56f7405be86b900405d09b00fac2d73b6bdf85f",
+                "reference": "a56f7405be86b900405d09b00fac2d73b6bdf85f",
                 "shasum": ""
             },
             "require": {
@@ -304,7 +410,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.8-dev"
+                    "dev-master": "1.12-dev"
                 }
             },
             "autoload": {
@@ -312,6 +418,7 @@
                     "Twig_": "lib/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3"
             ],
@@ -330,7 +437,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2012-05-17 09:02:47"
+            "time": "2013-02-09 18:21:53"
         }
     ],
     "packages-dev": [
