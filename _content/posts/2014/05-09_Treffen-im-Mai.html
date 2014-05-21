@@ -2,9 +2,9 @@
 title: Mai-Treffen am Dienstag, 20.5.2014, 20:30 Uhr
 author: Danilo Kühn
 time: 19:45:49
-updated: 2014-05-13 13:45:49
+updated: 2014-05-21 08:13:49
 active: blog
-tags: [announcement, deployment, pomander, docker]
+tags: [announcement, docker, development, enviroment]
 ---
 
 Hallo,
@@ -15,15 +15,35 @@ Dienstag. Da haben alle die sich an der Umfrage beteiligt haben Zeit.
 Wir haben wieder einen Raum an der Uni. Deswegen Treff- und Sammelpunkt 
 20:30 Uhr auf dem Augustusplatz vor der Uni (beim neuen Augusteum).
 
-
 Themen:
 
-* Deployment mit Pomander
 * Docker als Development-Container
 
 Zeit: 20:30 Uhr
 
-Ort: Uni Leipzig Raum P-901, Augustusplatz 10, 04109 Leipzig, Deutschland [[Map]]                                       
+Ort: Uni Leipzig Raum P-801, Augustusplatz 10, 04109 Leipzig, Deutschland [[Map]]                                       
                                                                                                                         
 [Map]: https://mapsengine.google.com/map/edit?mid=zeodHxxijHv8.krpQ0SXKhbEA  
 
+**Update**
+
+Das waren die Themen:
+
+Docker.io
+
+* Erste Schritte <http://docs.docker.io/use/basics/>
+* Dockerfile Befehle <http://docs.docker.io/reference/builder/>
+* Vagrant mit Docker-Provision <http://docs.vagrantup.com/v2/provisioning/docker.html>
+
+Wichtige Befehle:
+
+* Dockerfile bauen ```sudo docker build --rm=true .```
+* Docker Container starten ```sudo docker run -t -i IMAGENAME /bin/bash```
+* Docker Container starten und Verzeichnis mounten ```sudo docker run -t -i -v $(pwd):/var/www IMAGENAME /bin/bash```
+
+* Docker Container als Image speichern ```sudo docker commmit CONTAINERID REPONAME:TAGNAME```
+* Docker Container exportieren ```sudo docker export CONTAINERID > NAME.tar```
+* Docker Image exportieren ```sudo docker save -o FILENAME IMAGEID```
+
+* Löschen aller Container ```sudo docker rm $(docker ps -a -q)```
+* Löschen aller Images ```sudo docker rmi $(docker images -a -q)```
