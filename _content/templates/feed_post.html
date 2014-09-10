@@ -1,0 +1,28 @@
+{% block content %}
+
+{{ content|raw }}
+<entry>
+  {% if post.language %}
+    {% for lang in post.language %}
+    <title lang="{{ lang }}">{{ attribute(post.title, lang) }}</title>
+    {% if loop.first %}
+    <summary lang="{{ lang }}" type="html"><![CDATA[{{ post.content | raw }}]]></summary>
+    {% else %}
+    <summary lang="{{ lang }}" type="html"><![CDATA[{{ attribute(post, lang) | raw }}]]></summary>
+    {% endif %}
+    {% endfor %}
+  {% else %}
+    <title>{{ post.title }}</title>
+    <summary type="html"><![CDATA[{{ post.content | raw }}]]></summary>
+  {% endif %}
+    <link href="{{ post.url }}" />
+    <id>{{ post.uuid }}</id>
+    <created>{{ post.timestamp | date('c') }}</created>
+  {% if post.updated %}
+    <updated>{{ post.updated | date('c') }}</updated>
+  {% else %}
+    <updated>{{ post.timestamp | date('c') }}</updated>
+  {% endif %}
+</entry>
+
+{% endblock %}

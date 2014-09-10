@@ -1,7 +1,7 @@
 {% if post.language %}
   {% for lang in post.language %}
-  <h2 lang="{{lang}}">{{ attribute(post.title, lang) }}</h2>
+  <h2 lang="{{lang}}"><a href="{{ post.url }}">{{ attribute(post.title, lang) }}</a></h2>
   {% endfor %}
 {% else %}
-<h2 lang="de">{{ post.title }}</h2>
+<h2 lang="de"><a href="{{ post.url }}">{{ post.title }}</a></h2>
 {% endif %}

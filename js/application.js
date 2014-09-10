@@ -1,7 +1,6 @@
 'use strict';
 
 (function ($) {
-
   $('.language-switch a').click(function (e) {
     e.preventDefault();
 
