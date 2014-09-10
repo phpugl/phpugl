@@ -1,0 +1,11 @@
+{% if post.language %}
+  {% for lang in post.language %}
+    {% if lang == 'de' %}
+    <div lang="{{ lang }}">{{ post.content | raw }}</div>
+    {% else %}
+    <div lang="{{ lang }}">{{ attribute(post, lang) | raw }}</div>
+    {% endif %}
+  {% endfor %}
+{% else %}
+  <div lang="de">{{ post.content | raw }}</div>
+{% endif %}

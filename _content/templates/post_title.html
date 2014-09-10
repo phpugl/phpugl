@@ -1,0 +1,7 @@
+{% if post.language %}
+  {% for lang in post.language %}
+  <h2 lang="{{lang}}">{{ attribute(post.title, lang) }}</h2>
+  {% endfor %}
+{% else %}
+<h2>{{ post.title }}</h2>
+{% endif %}

@@ -1,12 +1,13 @@
 <article>
   <header>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    {% include 'post_title.html' with {'post': post} %}
     <small>
     {% include 'post_author.html' with {'post': post} %}
+    {% include 'post_lang.html' with {'post': post} %}
     </small>
   </header>
 
-  {{ post.content | raw }}
-	
+  {% include 'post_content.html' with {'post': post} %}
+
   {% if post.has_more %}<a href="{{post.url}}">mehr...</a>{% endif %}
 </article>
