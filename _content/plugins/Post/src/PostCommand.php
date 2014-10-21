@@ -91,11 +91,13 @@ class PostCommand extends ChefCommand
 
         $yamlFormatter['active'] = 'blog';
 
+        $yamlFormatter['language'] = '[ de, en ]';
+
         $content = "---\n";
         foreach ($yamlFormatter as $k => $v) {
           $content .= sprintf("%s: %s\n", $k, $v);
         }
-        $content .= "---\n\nPUT HERE YOUR CONTENT";
+        $content .= "---\n\HIER INHALT EINFÜGEN\n\n---en--\n\nPUT HERE YOUR CONTENT";
 
         $filename = sprintf("%s-%s_%s.html",
           date('m', $timestamp),
