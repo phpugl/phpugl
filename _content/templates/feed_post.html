@@ -3,26 +3,22 @@
 {{ content|raw }}
 <entry>
   {% if post.language %}
-    {% for lang in post.language %}
-    <title lang="{{ lang }}">{{ attribute(post.title, lang) }}</title>
-    {% if loop.first %}
-    <summary lang="{{ lang }}" type="html"><![CDATA[{{ post.content | raw }}]]></summary>
-    {% else %}
-    <summary lang="{{ lang }}" type="html"><![CDATA[{{ attribute(post, lang) | raw }}]]></summary>
-    {% endif %}
-    {% endfor %}
+    <title>{{ attribute(post.title, 'de') }}</title>
+    <summary type="html"><![CDATA[{{ post.content |striptags('<a><b><strong><ul><li><p><h1><h2><h3>')|raw  }}]]></summary>
   {% else %}
     <title>{{ post.title }}</title>
-    <summary type="html"><![CDATA[{{ post.content | raw }}]]></summary>
+    <summary type="html"><![CDATA[{{ post.content | striptags }}]]></summary>
   {% endif %}
-    <link href="{{ post.url }}" />
-    <id>{{ post.uuid }}</id>
-    <created>{{ post.timestamp | date('c') }}</created>
+  <link rel="alternate" type="text/html" href="{{ post.url }}" />
+  <id>{{ post.url }}</id>
+  <published>{{ post.timestamp | date('c') }}</published>
   {% if post.updated %}
-    <updated>{{ post.updated | date('c') }}</updated>
+  <updated>{{ post.updated | date('c') }}</updated>
   {% else %}
-    <updated>{{ post.timestamp | date('c') }}</updated>
+  <updated>{{ post.timestamp | date('c') }}</updated>
   {% endif %}
+  <author>
+    <name>{{ post.author }}</name>
+  </author>
 </entry>
-
 {% endblock %}
