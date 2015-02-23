@@ -97,7 +97,7 @@ class PostCommand extends ChefCommand
         foreach ($yamlFormatter as $k => $v) {
           $content .= sprintf("%s: %s\n", $k, $v);
         }
-        $content .= "---\n\HIER INHALT EINFÜGEN\n\n---en--\n\nPUT HERE YOUR CONTENT";
+        $content .= "---\n\nHIER INHALT EINFÜGEN\n\n---en---\n\nPUT HERE YOUR CONTENT";
 
         $filename = sprintf("%s-%s_%s.html",
           date('m', $timestamp),
