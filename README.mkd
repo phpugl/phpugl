@@ -21,7 +21,7 @@ Installiere vendors mit:
 
 ## Inhalt anschauen
 
-Die Seite enthält eine "index.php". Diese ermöglicht den Inhalt der Seite anzuschauen (Live Preview) ohne das sie gebaut werde muss.
+Die Seite enthält eine "index.php". Diese ermöglicht den Inhalt der Seite anzuschauen (Live Preview), ohne dass sie gebaut werden muss.
 
 ## Inhalt der Seite bearbeiten
 
