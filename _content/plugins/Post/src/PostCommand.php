@@ -1,8 +1,7 @@
 <?php
 
-use \Exception;
-use \Console_CommandLine;
-use \Console_CommandLine_Result;
+//use \Exception;
+//use \Console_CommandLine;
 use PieCrust\Chef\Commands\ChefCommand;
 use PieCrust\Chef\ChefContext;
 use PieCrust\IPieCrust;
