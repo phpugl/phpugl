@@ -2,8 +2,9 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{% if page.title.de %}{{ page.title.de }}{% else %}{{ page.title }}{% endif %} - {% endif %} PHPUGL - PHP UserGroup Leipzig</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- MetaTags -- begin -->
   <meta name="DC.title" content="PHPUGL">
@@ -22,83 +23,42 @@
   <meta name="robots" content="index,follow">
   <!-- MetaTags -- end -->
 
-  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-  <!--[if lt IE 9]>
-    <script src="{{ site.root }}js/lib/html5shiv.js"></script>
-  <![endif]-->
-
-  <!-- CSS concatenated and minified via ant build script-->
-  <link rel="stylesheet" href="{{ site.root }}css/bootstrap.min.css">
-  <link rel="stylesheet" href="{{ site.root }}css/style.css">
+  <link rel="stylesheet" href="{{ site.root }}css/normalize.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ site.root}}css/style.css">
 
   <link href="{{ site.root }}feed.xml" type="application/atom+xml" rel="alternate" title="PHPUGL" >
   <link rel="author" href="humans.txt" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div id="logo" role="logo">/**
- * Developer in Leipzig
- * talking about PHP and development
- *
- * @var \PHP\Usergroup\Leipzig
- */</div>
-      <nav class="navbar">
-        <div class="navbar-inner">
-          <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </a>
-            <a class="brand code" href="{{ site.root }}">PHPUGL</a>
-            <div class="nav-collapse">
-              <ul class="nav">
-                <li{% if page.active == "blog" %} class="active"{% endif %}><a href="{{ site.root }}blog/">Blog</a></li>
-                <li{% if page.active == "projects" %} class="active"{% endif %}><a href="{{ site.root }}projects/">Projekte</a></li>
-                <li{% if page.active == "aboutus" %} class="active"{% endif %}><a href="{{ site.root }}aboutus/">Über uns</a></li>
-              </ul>
-            </div><!--/.nav-collapse -->
-          </div>
-        </div>
+  <header class="header shadow--2dp">
+    <div class="container">
+      <nav class="nav">
+        <a class="nav__item" href="{{ site.root }}">
+          <img class="nav__logo shadow--2dp" src="/img/logo.png" alt="phpugl">
+        </a>
+        <a class="nav__item" href="{{ site.root }}blog/">Archiv</a>
+        <a class="nav__item" href="{{ site.root }}impress.html">Impressum</a>
+        <a class="nav__item" href="http://phpugl.de/feed.xml"><i class="fa fa-rss"></i></a>
+        <a class="nav__item" href="http://ical.phpugl.de/"><i class="fa fa-calendar"></i></a>
+        <a class="nav__item" href="https://twitter.com/#!/phpugl" rel="Twitter" title="Twitter"><i class="fa fa-twitter"></i></a>
+        <a class="nav__item" href="https://github.com/phpugl" rel="Github" title="Github"><i class="fa fa-github"></i></a>
+        <a class="nav__item" href="#" title="IRC #phpugl">#</a>
       </nav>
-    </header>
-    <div id="content">
-      <div class="row">
-        <section class="span10">
-          {% block content %}
-          {{ content|raw }}
-          {% endblock %}
-        </section>
-        <aside class="span2">
-          <img src="{{ site.root }}img/phpugl.jpg" alt="PHPUGL" class="phpugl">
-          <dl>
-            <dt>Kalender</dt>
-            <dd><a href="http://ical.phpugl.de" target="_blank"><img src="https://www.google.com/calendar/images/ical.gif" alt="ICAL" ></a> <a href="http://calendar.phpugl.de" target="_blank"><img src="https://www.google.com/calendar/images/html.gif" alt="HTML" ></a></dd>
-            <dt>Twitter</dt>
-            <dd><a href="https://twitter.com/#!/phpugl">@phpugl</a></dd>
-            <dt>Google Group</dt>
-            <dd><a href="https://groups.google.com/forum/?fromgroups#!forum/phpugl">phpugl</a></dd>
-            <dt>IRC</dt>
-            <dd><a href="irc://irc.freenode.net/phpugl">#phpugl</a></dd>
-            <dt>Feed</dt>
-            <dd><a href="{{ site.root }}feed.xml" type="application/atom+xml">Atom</a></dd>
-            <dt>Github</dt>
-            <dd><a href="https://github.com/phpugl">Repositories</a></dd>
-          </dl>
-          {% block sidebar %}
-          {{ sidebar|raw }}
-          {% endblock %}
-       </aside>
-      </div>
     </div>
-    <footer class="footer">
-      [PHPUGL] PHP UserGroup Leipzig
-      <nav>
-        <a href="{{ site.root }}impressum/">Impressum</a>
-      </nav>
-    </footer>
-  </div> <!--! end of #container -->
+  </header>
+  <main class="container drop-space">
+    <section property="content">
+    {% block content %}
+    {{ content|raw }}
+    {% endblock %}
+    </section>
+  </main>
+
+  <footer class="page-footer container">
+    <p>phpugl - Leipzig PHP Usergroup</p>
+  </footer>
+  
   <script src="{{ site.root }}js/lib/jquery.min.js"></script>
   <script src="{{ site.root }}js/lib/bootstrap.min.js"></script>
   <script src="{{ site.root }}js/application.js"></script>
