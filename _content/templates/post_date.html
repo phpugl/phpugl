@@ -1,0 +1,17 @@
+<div class="post__info shadow--2dp">
+  <time class="post__info__date" pubdate datetime="{{ post.timestamp | date('c') }}">
+      <span class="post__info__date__month">{{ post.date | date('M') }}</span>
+      <span class="post__info__date__day">{{ post.date | date('d') }}</span>
+  </time>
+  {% if post.language %}
+  <span class="language-switch">
+    {% for lang in post.language %}
+      {% if loop.first %}
+      <a href="#" class="btn btn-yellow" data-lang="{{lang}}">{{lang}}</a>
+      {% else %}
+      <a href="#" class="btn" data-lang="{{lang}}">{{lang}}</a>
+      {% endif %}
+    {% endfor %}
+  </span>
+  {% endif %}
+</div>

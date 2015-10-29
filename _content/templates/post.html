@@ -1,14 +1,11 @@
 {% extends "default.html" %}
 
 {% block content %}
-<article>
-    <header class="page-header">
-        {% include 'post_title.html' with {'post': page} %}
-        <small>
-        {% include 'post_author.html' with {'post': page} %}
-        {% include 'post_lang.html' with {'post': page} %}
-        {% include 'post_tags.html' with {'post': page} %}
-        </small>
+<section class="posts shadow--2dp">
+  <article class="post">
+    <header>
+      {% include 'post_title.html' with {'post': page} %}
+      {% include 'post_date.html' with {'post': page} %}
     </header>
 
     <div lang="de">{{ content | raw }}</div>
@@ -16,5 +13,6 @@
     {% if en %}
     <div lang="en">{{ en | raw }}</div>
     {% endif %}
-</article>
+  </article>
+</section>
 {% endblock %}
