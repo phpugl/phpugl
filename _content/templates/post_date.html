@@ -4,7 +4,7 @@
       <span class="post__info__date__day">{{ post.date | date('d') }}</span>
   </time>
   {% if post.language %}
-  <span class="language-switch">
+  <div class="language-switch post__language">
     {% for lang in post.language %}
       {% if loop.first %}
       <a href="#" class="btn btn-yellow" data-lang="{{lang}}">{{lang}}</a>
@@ -12,6 +12,6 @@
       <a href="#" class="btn" data-lang="{{lang}}">{{lang}}</a>
       {% endif %}
     {% endfor %}
-  </span>
+  </div>
   {% endif %}
 </div>

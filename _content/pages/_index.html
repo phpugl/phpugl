@@ -14,24 +14,10 @@ posts_filters:
         has_tags: announcement
 ---
 
-<h1>PHPUGL</h1>
-
-<section class="posts shadow--2dp">
+<section class="cards cards--nowrap drop-space">
   {% for post in blog.posts.filter('announcement_filter') %}
-  {% include 'blog_post.html' %}
+  {% include 'announcement.html' %}
   {% endfor %}
-
-  {% for post in blog.posts.filter('posts_filters').limit(3) %}
-  {% include 'blog_post.html' %}
-  {% endfor %}
-</section>
-
-<section>
-  <div class="card">
-    <div class="card__main card--center">
-      <a class="btn" href="{{ site.root }}blog/">Zum Archiv <i class="fa fa-arrow-right"></i></a>
-    </div>
-  </div>
 </section>
 
 <section class="members">
@@ -39,7 +25,7 @@ posts_filters:
 
   <div class="cards">
     {% for name, avatar in site.members %}
-    <div class="card shadow--2dp card--center">
+    <div class="card shadow--2dp card--center card--spacing">
       <div class="card__main">
         <a href="http://github.com/{{ name }}"><img src="{{ avatar }}" height="120" alt="{{ name }}">
         <div class="card__inner">

@@ -73,6 +73,9 @@ dd:after {
 .drop-space {
   margin-bottom: 50px;
 }
+.text-center {
+  text-align: center;
+}
 .hide {
   display: none;
 }
@@ -135,6 +138,10 @@ dd:after {
   flex-wrap: wrap;
 }
 
+.cards--nowrap {
+  flex-wrap: nowrap;
+}
+
 .card {
   margin-bottom: 24px;
   position: relative;
@@ -159,8 +166,14 @@ dd:after {
 .card__inner {
   margin: 20px;
 }
+.card__footer {
+  margin-bottom: 20px;
+}
 .card--center {
   text-align: center;
+}
+.card--spacing {
+  margin-left: 20px;
 }
 
 /* posts */
@@ -210,9 +223,6 @@ dd:after {
   display: block;
   font-size: 1.5em;
   color: #999;
-  border-bottom: 1px solid #DDD;
-  padding: 0px 0px 1em;
-  margin: 0px 0px 0.75em;
 }
 .post__info__date__day {
   display: block;
@@ -220,6 +230,11 @@ dd:after {
   font-size: 1.5em;
   font-weight: 700;
   color: #1B252A;
+}
+.post__language {
+  border-top: 1px solid #DDD;
+  padding-top: 1em;
+  margin-top: 0.75em;
 }
 
 .label {
@@ -294,6 +309,12 @@ dd:after {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
+
+  .cards--nowrap {
+    flex-wrap: wrap;
+    margin-right: 10px;
+  }
+
     .posts {
       margin-left: 0;
     }

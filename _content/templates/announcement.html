@@ -1,0 +1,31 @@
+<article class="card shadow--2dp card--spacing">
+  <div class="card__main">
+    <div class="card__heading">
+      {% if post.language %} {% for lang in post.language %}
+      <a lang="{{lang}}" href="{{ post.url }}">{{ attribute(post.title, lang) }}</a>
+      {% endfor %} {% else %}
+      <a lang="de" href="{{ post.url }}">{{ post.title }}</a>
+      {% endif %}
+    </div>
+    <div class="card__inner">
+      {% if post.language %} {% for lang in post.language %} {% if lang == 'de' %}
+      <div lang="{{ lang }}">{{ post.content | raw }}</div>
+      {% else %}
+      <div lang="{{ lang }}">{{ attribute(post, lang) | raw }}</div>
+      {% endif %} {% endfor %} {% else %}
+      <div lang="de">{{ post.content | raw }}</div>
+      {% endif %}
+    </div>
+    {% if post.language %}
+    <div class="card__footer language-switch post__language text-center">
+    {% for lang in post.language %}
+      {% if loop.first %}
+      <a href="#" class="btn btn-yellow" data-lang="{{lang}}">{{lang}}</a>
+      {% else %}
+      <a href="#" class="btn" data-lang="{{lang}}">{{lang}}</a>
+      {% endif %}
+    {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</article>

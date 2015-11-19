@@ -4,8 +4,6 @@ active: blog
 format: none
 ---
 
-<h1>Blog &mdash; {{ tag }}</h1>
-
 {% for post in pagination.posts %}
 {% include 'blog_post.html'%}
 {% endfor %}

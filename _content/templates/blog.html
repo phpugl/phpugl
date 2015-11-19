@@ -1,17 +1,15 @@
 {% extends "default.html" %}
 
 {% block content %}
-<h1>Archiv</h1>
-
-<section class="posts shadow--2dp">
+<section class="posts shadow--2dp drop-space">
 {{ content|raw }}
 </section>
 
-<div class="pagination card">
+<div class="pagination">
 	<div class="card__main card--center">
 		{% if pagination.prev_page %}
 		<a href="{{ pcurl(pagination.prev_page) }}" class="btn"><i class="fa fa-arrow-left"></i> Neuere Beiträge</a>
-		
+
 		{% endif %}
 	  {% if pagination.next_page %}
 	  <a href="{{ pcurl(pagination.next_page) }}" class="btn">Ältere Beiträge <i class="fa fa-arrow-right"></i></a>
