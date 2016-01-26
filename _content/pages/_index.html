@@ -3,20 +3,37 @@ title: Home
 active: home
 keywords: Leipzig,PHP,symfony,Symfony2,doctrine,Doctrine2,LSDUG,HTML5
 format: none
-announcement_filters:
+announcement_filter:
     has_tags: announcement
     not:
         has_tags: draft
+
+posts_filters:
+    not:
+        has_tags: draft
+        has_tags: announcement
 ---
 
-<header class="page-header">
-  <h1>Hallo Entwickler,</h1>
-  <p>die PHP UserGroup Leipzig grüßt alle PHP-Interessierten in und um 
-  Leipzig. Wir treffen uns jeden letzten Donnerstag im Monat. Der rege 
-  Austausch über Neuigkeiten, Fakten und Best Practices schafft die 
-  besten Voraussetzungen für die Entwicklung mit PHP.</p>
-</header>
+<section class="cards cards--nowrap drop-space">
+  {% for post in blog.posts.filter('announcement_filter') %}
+  {% include 'announcement.html' %}
+  {% endfor %}
+</section>
 
-{% for post in blog.posts.filter('announcement_filters') %}
-{% include 'home_post.html' %}
-{% endfor %}
+<section class="members">
+  <h2>Die Usergroup, <small>das sind wir.</small></h2>
+
+  <div class="cards">
+    {% for name, avatar in site.members %}
+    <div class="card shadow--2dp card--center card--spacing">
+      <div class="card__main">
+        <a href="http://github.com/{{ name }}"><img src="{{ avatar }}" height="120" alt="{{ name }}">
+        <div class="card__inner">
+
+          <span class="name">{{ name }}</span>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

@@ -7,13 +7,13 @@
     var $el = $(this),
         parentSwitch = $el.parents('.language-switch'),
         parentArticle = $el.parents('article'),
-        activeBtn = $('a.btn-success', parentSwitch);
+        activeBtn = $('a.btn-yellow', parentSwitch);
 
 
     $('*[lang="' + activeBtn.data('lang') + '"]', parentArticle).addClass('hide');
-    activeBtn.removeClass('btn-success');
+    activeBtn.removeClass('btn-yellow');
     $('*[lang="' + $el.data('lang') + '"]', parentArticle).removeClass('hide');
-    $el.addClass('btn-success');
+    $el.addClass('btn-yellow');
   });
 
   $('*[lang="en"]').addClass('hide');

@@ -1,14 +1,7 @@
-<article>
+<article class="post">
   <header>
-      {% include 'post_title.html' with {'post': post} %}
-      <small>
-      {% include 'post_author.html' with {'post': post} %}
-      {% include 'post_lang.html' with {'post': post} %}
-      {% include 'post_tags.html' with {'post': post} %}
-      </small>
+    {% include 'post_date.html' with {'post': post} %}
+    {% include 'post_title.html' with {'post': post} %}
   </header>
-
-  {% include 'post_content.html' with {'post': post} %}
-	
-  {% if post.has_more %}<a class="btn" title="Zeige alles an" href="{{post.url}}">mehr...</a>{% endif %}
+  {% include 'post_content.html' with {'post': post} %} {% if post.has_more %}<a class="btn" title="Zeige alles an" href="{{post.url}}">mehr...</a>{% endif %}
 </article>
