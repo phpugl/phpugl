@@ -14,7 +14,7 @@ posts_filters:
         has_tags: announcement
 ---
 
-<section class="cards cards--nowrap drop-space">
+<section class="cards cards--nowrap drop-space cards--centered">
   {% for post in blog.posts.filter('announcement_filter') %}
   {% include 'announcement.html' %}
   {% endfor %}

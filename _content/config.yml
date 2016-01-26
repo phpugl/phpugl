@@ -10,17 +10,17 @@ site:
     posts_per_page: 10
     date_format: 'd.m.Y'
     members:
-        bascht: https://avatars.githubusercontent.com/u/51264?v=3&s=120
         bitundpixel: https://avatars.githubusercontent.com/u/205191?v=3&s=120
-        ChrisChinchilla: https://avatars.githubusercontent.com/u/42080?v=3&s=120
         cweiske: https://avatars.githubusercontent.com/u/59036?v=3&s=120
-        der-On: https://avatars.githubusercontent.com/u/359399?v=3&s=120
         mikewink: https://avatars.githubusercontent.com/u/183511?v=3&s=120
         nogo: https://avatars.githubusercontent.com/u/305163?v=3&s=120
         quafzi: https://avatars.githubusercontent.com/u/164261?v=3&s=120
         ThomasJott: https://avatars.githubusercontent.com/u/1399641?v=3&s=120
-        thyseus: https://avatars.githubusercontent.com/u/654271?v=3&s=120
         tqmz: https://avatars.githubusercontent.com/u/121209?v=3&s=120
+        thyseus: https://avatars.githubusercontent.com/u/654271?v=3&s=120
+        bascht: https://avatars.githubusercontent.com/u/51264?v=3&s=120
+        ChrisChinchilla: https://avatars.githubusercontent.com/u/42080?v=3&s=120
+        der-On: https://avatars.githubusercontent.com/u/359399?v=3&s=120
 
 markdown:
     use_markdown_extra: true
