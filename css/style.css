@@ -1,5 +1,6 @@
 html, body {
   background: #FAFAFA;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 a {
   color: #369;
@@ -11,7 +12,6 @@ a:hover, a.active {
 }
 h1 {
   color: #111;
-  font-family: 'Helvetica Neue', sans-serif;
   font-size: 3.25em;
   font-weight: bold;
   letter-spacing: -1px;
@@ -20,7 +20,6 @@ h1 {
 }
 h2 {
   color: #999;
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2em;
   font-weight: 300;
   line-height: 32px;
@@ -28,7 +27,6 @@ h2 {
 }
 p {
   color: #111;
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1em;
   line-height: 24px;
   margin: 0 0 24px;
