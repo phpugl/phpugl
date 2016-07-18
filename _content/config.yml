@@ -10,6 +10,7 @@ site:
     posts_per_page: 10
     date_format: 'd.m.Y'
     members:
+        bergo: https://avatars.githubusercontent.com/u/619785?v=3&s=120
         bitundpixel: https://avatars.githubusercontent.com/u/205191?v=3&s=120
         cweiske: https://avatars.githubusercontent.com/u/59036?v=3&s=120
         mikewink: https://avatars.githubusercontent.com/u/183511?v=3&s=120
