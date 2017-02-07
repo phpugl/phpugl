@@ -33,7 +33,7 @@ baker:
     config_variants:
         default:
             site:
-                root: http://phpugl.de
+                root: https://phpugl.de
     skip_patterns:
         - /^bin/
         - /^vendor/
