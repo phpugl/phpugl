@@ -26,7 +26,7 @@
                 "name": "geshi/geshi",
                 "version": "1.0.8.11",
                 "dist": {
-                    "url":  "http://sourceforge.net/projects/geshi/files/geshi/GeSHi%201.0.8.11/GeSHi-1.0.8.11.zip/download",
+                    "url":  "https://sourceforge.net/projects/geshi/files/geshi/GeSHi%201.0.8.11/GeSHi-1.0.8.11.zip/download",
                     "type": "zip"
                 },
                 "autoload": {
