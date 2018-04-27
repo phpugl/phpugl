@@ -27,11 +27,12 @@ posts_filters:
     {% for name, avatar in site.members %}
     <div class="card shadow--2dp card--center card--spacing">
       <div class="card__main">
-        <a href="http://github.com/{{ name }}"><img src="{{ avatar }}" height="120" alt="{{ name }}">
-        <div class="card__inner">
-
-          <span class="name">{{ name }}</span>
-        </div>
+        <a href="http://github.com/{{ name }}">
+          <img src="{{ avatar }}" height="120" alt="{{ name }}">
+          <div class="card__inner">
+            <span class="name">{{ name }}</span>
+          </div>
+        </a>
       </div>
     </div>
     {% endfor %}
