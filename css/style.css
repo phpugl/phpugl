@@ -263,6 +263,10 @@ dd:after {
   margin-right: 0em;
 }
 
+.members .card__inner {
+  margin: 20px 0;
+}
+
 /** Buttons */
 
 .btn {
