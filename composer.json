@@ -18,7 +18,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/ludovicchabant/PieCrust.git"
+            "url": "https://github.com/phpugl/PieCrust.git"
         },
         {
             "type": "package",

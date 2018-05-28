@@ -1,23 +1,23 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "a5913835be0f8a777a33055773bc0dd4",
+    "content-hash": "cefe19ee258bde074dad92a413199b40",
     "packages": [
         {
             "name": "bolt80/piecrust",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ludovicchabant/PieCrust.git",
-                "reference": "186600137cc59d24ddeede0ac7b1bd55cbe9924d"
+                "url": "https://github.com/phpugl/PieCrust.git",
+                "reference": "01910e9e7f06b5fc152757ffd9f1e6d241c20f25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ludovicchabant/PieCrust/zipball/186600137cc59d24ddeede0ac7b1bd55cbe9924d",
-                "reference": "186600137cc59d24ddeede0ac7b1bd55cbe9924d",
+                "url": "https://api.github.com/repos/phpugl/PieCrust/zipball/01910e9e7f06b5fc152757ffd9f1e6d241c20f25",
+                "reference": "01910e9e7f06b5fc152757ffd9f1e6d241c20f25",
                 "shasum": ""
             },
             "require": {
@@ -58,10 +58,9 @@
             "description": "A lightweight CMS and static website generator.",
             "homepage": "http://bolt80.com/piecrust",
             "support": {
-                "source": "https://github.com/ludovicchabant/PieCrust/tree/master",
-                "issues": "https://github.com/ludovicchabant/PieCrust/issues"
+                "source": "https://github.com/phpugl/PieCrust/tree/master"
             },
-            "time": "2015-04-19 04:40:40"
+            "time": "2018-05-28T19:42:17+00:00"
         },
         {
             "name": "bolt80/stupidhttp",
@@ -104,14 +103,14 @@
                 "server",
                 "web"
             ],
-            "time": "2012-05-31 20:28:25"
+            "time": "2012-05-31T20:28:25+00:00"
         },
         {
             "name": "geshi/geshi",
             "version": "1.0.8.11",
             "dist": {
                 "type": "zip",
-                "url": "http://sourceforge.net/projects/geshi/files/geshi/GeSHi%201.0.8.11/GeSHi-1.0.8.11.zip/download",
+                "url": "https://sourceforge.net/projects/geshi/files/geshi/GeSHi%201.0.8.11/GeSHi-1.0.8.11.zip/download",
                 "reference": null,
                 "shasum": null
             },
@@ -161,7 +160,7 @@
             ],
             "description": "lessphp is a compiler for LESS written in PHP.",
             "homepage": "http://leafo.net/lessphp/",
-            "time": "2013-03-02 16:13:31"
+            "time": "2013-03-02T16:13:31+00:00"
         },
         {
             "name": "michelf/php-markdown",
@@ -212,7 +211,7 @@
             "keywords": [
                 "markdown"
             ],
-            "time": "2013-04-11 18:53:11"
+            "time": "2013-04-11T18:53:11+00:00"
         },
         {
             "name": "mikey179/vfsStream",
@@ -242,28 +241,28 @@
                 "BSD"
             ],
             "homepage": "http://vfs.bovigo.org/",
-            "time": "2012-08-25 12:49:29"
+            "time": "2012-08-25T12:49:29+00:00"
         },
         {
             "name": "mustache/mustache",
-            "version": "v2.8.0",
+            "version": "v2.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/mustache.php.git",
-                "reference": "64c28cc73e01d5edcef7de8cb2b16782615f648a"
+                "reference": "fe8fe72e9d580591854de404cc59a1b83ca4d19e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/64c28cc73e01d5edcef7de8cb2b16782615f648a",
-                "reference": "64c28cc73e01d5edcef7de8cb2b16782615f648a",
+                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/fe8fe72e9d580591854de404cc59a1b83ca4d19e",
+                "reference": "fe8fe72e9d580591854de404cc59a1b83ca4d19e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
             "require-dev": {
-                "fabpot/php-cs-fixer": "~1.6",
-                "phpunit/phpunit": "~3.7|~4.0"
+                "friendsofphp/php-cs-fixer": "~1.11",
+                "phpunit/phpunit": "~3.7|~4.0|~5.0"
             },
             "type": "library",
             "autoload": {
@@ -288,7 +287,7 @@
                 "mustache",
                 "templating"
             ],
-            "time": "2015-04-01 06:37:33"
+            "time": "2017-07-11T12:54:05+00:00"
         },
         {
             "name": "netcarver/textile",
@@ -324,7 +323,7 @@
             ],
             "description": "A lightweight markup language that takes (almost) plaintext and converts it into well formed HTML.",
             "homepage": "https://github.com/netcarver/textile",
-            "time": "2013-01-01 17:29:35"
+            "time": "2013-01-01T17:29:35+00:00"
         },
         {
             "name": "smartypants/smartypants",
@@ -354,12 +353,12 @@
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Yaml.git",
+                "url": "https://github.com/symfony/yaml.git",
                 "reference": "b293027f4030998a752a1ac06e80ae9e6bf6a763"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/b293027f4030998a752a1ac06e80ae9e6bf6a763",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/b293027f4030998a752a1ac06e80ae9e6bf6a763",
                 "reference": "b293027f4030998a752a1ac06e80ae9e6bf6a763",
                 "shasum": ""
             },
@@ -383,17 +382,17 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2013-01-27 16:49:19"
+            "time": "2013-01-27T16:49:19+00:00"
         },
         {
             "name": "twig/twig",
@@ -450,7 +449,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2014-02-13 10:19:29"
+            "time": "2014-02-13T10:19:29+00:00"
         }
     ],
     "packages-dev": [],
