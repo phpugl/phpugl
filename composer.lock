@@ -110,9 +110,7 @@
             "version": "1.0.8.11",
             "dist": {
                 "type": "zip",
-                "url": "https://sourceforge.net/projects/geshi/files/geshi/GeSHi%201.0.8.11/GeSHi-1.0.8.11.zip/download",
-                "reference": null,
-                "shasum": null
+                "url": "https://sourceforge.net/projects/geshi/files/geshi/GeSHi%201.0.8.11/GeSHi-1.0.8.11.zip/download"
             },
             "type": "library",
             "autoload": {
@@ -245,16 +243,16 @@
         },
         {
             "name": "mustache/mustache",
-            "version": "v2.12.0",
+            "version": "v2.14.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/mustache.php.git",
-                "reference": "fe8fe72e9d580591854de404cc59a1b83ca4d19e"
+                "reference": "579ffa5c96e1d292c060b3dd62811ff01ad8c24e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/fe8fe72e9d580591854de404cc59a1b83ca4d19e",
-                "reference": "fe8fe72e9d580591854de404cc59a1b83ca4d19e",
+                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/579ffa5c96e1d292c060b3dd62811ff01ad8c24e",
+                "reference": "579ffa5c96e1d292c060b3dd62811ff01ad8c24e",
                 "shasum": ""
             },
             "require": {
@@ -287,7 +285,11 @@
                 "mustache",
                 "templating"
             ],
-            "time": "2017-07-11T12:54:05+00:00"
+            "support": {
+                "issues": "https://github.com/bobthecow/mustache.php/issues",
+                "source": "https://github.com/bobthecow/mustache.php/tree/v2.14.1"
+            },
+            "time": "2022-01-21T06:08:36+00:00"
         },
         {
             "name": "netcarver/textile",
@@ -330,9 +332,7 @@
             "version": "1.5.1",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/michelf/php-smartypants/archive/v1.5.1f.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://github.com/michelf/php-smartypants/archive/v1.5.1f.zip"
             },
             "type": "library"
         },
@@ -341,9 +341,7 @@
             "version": "1.0.1",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/michelf/php-smartypants/archive/t1.0.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://github.com/michelf/php-smartypants/archive/t1.0.1.zip"
             },
             "type": "library"
         },
@@ -463,5 +461,6 @@
     "platform": {
         "php": ">= 5.3.0"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
